@@ -1,11 +1,10 @@
 $(document).ready(function() {
 
     function buildTown(town) {
-        var town = town;
+        var $town = $(town);
 
         $(".b-build").on("click", function(){
-            var $this = $(this),
-                $town = $(town);
+            var $this = $(this);
 
             if ($this.hasClass("is-active") === false) {
                 var btnClass = $this.attr("class").substr(8);
@@ -22,4 +21,6 @@ $(document).ready(function() {
             }
         });
     }
+
+    buildTown(".b-empire");
 });
