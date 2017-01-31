@@ -1,0 +1,24 @@
+//- Загрузка общего шаблона для всех страниц
+extends ./templates/_base-template
+
+block head
+    - var pageTitle = 'Disciples 2 - Main Menu';
+
+block content
+    .b-container
+        .b-main-menu
+            ul.b-main-menu__list
+                li.b-main-menu__item
+                    a.b-main-menu__link(href="", title="") Singleplayer
+                li.b-main-menu__item
+                    a.b-main-menu__link(href="", title="") Multiplayer
+                li.b-main-menu__item
+                    a.b-main-menu__link(href="", title="") Tutorial
+                li.b-main-menu__item
+                    a.b-main-menu__link(href="", title="") Options
+                li.b-main-menu__item
+                    a.b-main-menu__link(href="", title="") Intro
+                li.b-main-menu__item
+                    a.b-main-menu__link(href="", title="") Credits
+                li.b-main-menu__item
+                    a.b-main-menu__link(href="", title="") Quit
