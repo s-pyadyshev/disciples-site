@@ -1,0 +1,32 @@
+.b-build-container {
+  width: 400px;
+}
+
+.b-build {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.b-build span {
+  padding: 0 5px;
+  border: 1px solid #000;
+}
+
+.b-build__or {
+  margin-right: 5px;
+}
+
+.b-build__section {
+  margin-bottom: 20px;
+}
+
+.b-build__section-title {
+  display: block;
+  font-weight: 700;
+}
+
+.b-build.is-active span {
+  background: blue;
+  color: #fff;
+}

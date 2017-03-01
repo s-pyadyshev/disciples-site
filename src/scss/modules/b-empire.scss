@@ -1,0 +1,133 @@
+.b-empire {
+  position: relative;
+  width: 640px;
+  height: 600px;
+}
+
+.b-empire img {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 600px;
+}
+
+.b-empire img.b-empire__town, .b-empire img.b-empire__walls {
+  display: block;
+}
+
+.b-empire__town {
+  z-index: 0;
+}
+
+.b-empire__walls {
+  z-index: 100;
+}
+
+.b-empire__guild {
+  z-index: 99;
+}
+
+.b-empire__magic-tower {
+  z-index: 98;
+}
+
+.b-empire__temple {
+  z-index: 105;
+}
+
+.b-empire__stable {
+  z-index: 103;
+}
+
+.b-empire__imperial-stable {
+  z-index: 104;
+}
+
+.b-empire__fountain-of-life {
+  z-index: 100;
+}
+
+.b-empire__shrine {
+  z-index: 100;
+}
+
+.b-empire__holy-statue {
+  z-index: 99;
+}
+
+.b-empire__chapel {
+  z-index: 99;
+}
+
+.b-empire__dungeon {
+  z-index: 103;
+}
+
+.b-empire__torture-chamber {
+  z-index: 102;
+}
+
+.b-empire__magistrate {
+  z-index: 101;
+}
+
+.b-empire__library {
+  z-index: 99;
+}
+
+.b-empire__elemental-circle {
+  z-index: 101;
+}
+
+.b-empire__tower {
+  z-index: 101;
+}
+
+.b-empire__arcane-tower {
+  z-index: 101;
+}
+
+.b-empire__ruined-temple {
+  z-index: 99;
+}
+
+.b-empire__archery-range {
+  z-index: 102;
+}
+
+.b-empire__imperial-guild {
+  z-index: 101;
+}
+
+.b-empire__monastery {
+  z-index: 97;
+}
+
+.b-empire__sanctuary {
+  z-index: 97;
+}
+
+.b-empire__worship-house {
+  z-index: 97;
+}
+
+.b-empire__church {
+  z-index: 97;
+}
+
+.b-empire__cathedral {
+  z-index: 97;
+}
+
+.b-empire__basilica {
+  z-index: 97;
+}
+
+.b-empire__flag-left {
+  z-index: 105;
+}
+
+.b-empire__flag-right {
+  z-index: 105;
+}

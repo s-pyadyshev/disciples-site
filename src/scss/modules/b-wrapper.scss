@@ -1,0 +1,10 @@
+.b-wrapper {
+  display: flex;
+}
+
+@media only all and (max-width: 767px) {
+  .b-wrapper--town {
+    flex-direction: column;
+    width: 100%;
+  }
+}
