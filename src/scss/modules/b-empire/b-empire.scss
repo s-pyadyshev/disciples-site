@@ -1,0 +1,247 @@
+.b-empire {
+  position: relative;
+  width: 640px;
+  height: 600px;
+}
+
+.b-empire img {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 600px;
+}
+
+.b-empire img.b-empire__town, .b-empire img.b-empire__walls {
+  display: block;
+}
+
+.b-main-menu {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: url("../img/main-menu.jpg");
+}
+
+.b-main-menu__item {
+  height: 52px;
+  margin-bottom: 7px;
+}
+
+.b-main-menu__link {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  width: 100%;
+  height: 52px;
+  line-height: 50px;
+  text-decoration: none;
+  background: url("../img/main-menu-btn.png");
+  color: #000;
+}
+
+.b-main-menu__link:hover {
+  background: url("../img/main-menu-btn-hover.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #000;
+}
+
+.b-main-menu__link:active {
+  background: url("../img/main-menu-btn-active.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #000;
+}
+
+.b-main-menu__list {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  width: 306px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.b-container {
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh;
+}
+
+.b-build-container {
+  width: 400px;
+}
+
+.b-build {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.b-build span {
+  padding: 0 5px;
+  border: 1px solid #000;
+}
+
+.b-build__or {
+  margin-right: 5px;
+}
+
+.b-build__section {
+  margin-bottom: 20px;
+}
+
+.b-build__section-title {
+  display: block;
+  font-weight: 700;
+}
+
+.b-build.is-active span {
+  background: blue;
+  color: #fff;
+}
+
+.b-wrapper {
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row {
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+
+.b-empire__town {
+  z-index: 0;
+}
+
+.b-empire__walls {
+  z-index: 100;
+}
+
+.b-empire__guild {
+  z-index: 99;
+}
+
+.b-empire__magic-tower {
+  z-index: 98;
+}
+
+.b-empire__temple {
+  z-index: 105;
+}
+
+.b-empire__stable {
+  z-index: 103;
+}
+
+.b-empire__imperial-stable {
+  z-index: 104;
+}
+
+.b-empire__fountain-of-life {
+  z-index: 100;
+}
+
+.b-empire__shrine {
+  z-index: 100;
+}
+
+.b-empire__holy-statue {
+  z-index: 99;
+}
+
+.b-empire__chapel {
+  z-index: 99;
+}
+
+.b-empire__dungeon {
+  z-index: 103;
+}
+
+.b-empire__torture-chamber {
+  z-index: 102;
+}
+
+.b-empire__magistrate {
+  z-index: 101;
+}
+
+.b-empire__library {
+  z-index: 99;
+}
+
+.b-empire__elemental-circle {
+  z-index: 101;
+}
+
+.b-empire__tower {
+  z-index: 101;
+}
+
+.b-empire__arcane-tower {
+  z-index: 101;
+}
+
+.b-empire__ruined-temple {
+  z-index: 99;
+}
+
+.b-empire__archery-range {
+  z-index: 102;
+}
+
+.b-empire__imperial-guild {
+  z-index: 101;
+}
+
+.b-empire__monastery {
+  z-index: 97;
+}
+
+.b-empire__sanctuary {
+  z-index: 97;
+}
+
+.b-empire__worship-house {
+  z-index: 97;
+}
+
+.b-empire__church {
+  z-index: 97;
+}
+
+.b-empire__cathedral {
+  z-index: 97;
+}
+
+.b-empire__basilica {
+  z-index: 97;
+}
+
+.b-empire__flag-left {
+  z-index: 105;
+}
+
+.b-empire__flag-right {
+  z-index: 105;
+}

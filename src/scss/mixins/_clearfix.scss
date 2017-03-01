@@ -1,0 +1,14 @@
+// http://cssmojo.com/the-very-latest-clearfix-reloaded
+@mixin clearfix() {
+    // For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.
+    // *zoom: 1;
+
+    &:before,
+    &:after {
+        content: " ";
+        display: block;
+    }
+    &:after {
+        clear: both;
+    }
+}

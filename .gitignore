@@ -92,3 +92,5 @@ npm-debug.log
 .hg
 .idea
 .svn
+
+templates/

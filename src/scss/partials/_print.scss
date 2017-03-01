@@ -1,0 +1,10 @@
+@media print {
+
+    a[href^=http]:after {
+        content:" <" attr(href) ">";
+    }
+
+    img, table {
+        page-break-inside: avoid;
+    }
+}

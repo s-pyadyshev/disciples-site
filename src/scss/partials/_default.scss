@@ -1,0 +1,49 @@
+// https://css-tricks.com/box-sizing
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    // https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer
+    // Решение для футера, всегда приклеенного к низу, для этого блоку с основным содержимым 
+    // между header и footer задаётся flex-grow: 1, в данном случае это элемент main
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: $g-font-size;
+    line-height: $g-line-height;
+    cursor: url(../img/cursor-sword.png), default;
+}
+
+img {
+    box-sizing: content-box;
+}
+
+// Forms
+input,
+select,
+textarea {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+    appearance: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+// https://css-tricks.com/cascading-svg-fill-color
+svg {
+    fill: currentColor;
+}
