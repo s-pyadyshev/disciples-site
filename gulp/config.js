@@ -140,7 +140,7 @@ module.exports = {
 
     browserSync: {
         server: {
-            baseDir: './build'
+            baseDir: './'
         },
         tunnel: false,
         open: "local",
