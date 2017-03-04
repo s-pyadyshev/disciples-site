@@ -1,123 +1,33 @@
 //- Загрузка общего шаблона для всех страниц
 extends ./templates/_base-template
+include ./includes/empire-town
+include ./includes/undead-town
+include ./includes/elves-town
+include ./includes/clans-town
+include ./includes/legions-town
 
 block head
-    - var pageTitle = 'Disciples 2 - Empire Town';
+    - var pageTitle = 'Disciples 2 - Races';
 
 block content
     .b-container
         .b-wrapper
-            .b-build-container
-                .b-build__section
-                    span.b-build__section-title Other Buildings
-                    .row
-                        .b-build.b-empire__guild 
-                            span Guild
-                        .b-build.b-empire__magic-tower
-                            span Magic Tower
-                        .b-build.b-empire__temple
-                            span Temple
-                .b-build__section
-                    span.b-build__section-title Fighter Units
-                    .col
-                        span.b-build__section-subtitle Knights
-                        .b-build.b-empire__stable 
-                            span Stable
-                        .b-build.b-empire__imperial-stable
-                            span Imperial Stable
-                        .row
-                            .b-build.b-empire__shrine
-                                span Shrine
-                            span.b-build__or OR
-                            .b-build.b-empire__fountain-of-life
-                                span Fountain of Life
-                        .row
-                            .b-build.b-empire__holy-statue
-                                span Holy Statue
-                            span.b-build__or OR
-                            .b-build.b-empire__chapel
-                                span Chapel
-                    .col
-                        span.b-build__section-subtitle Inquisitors
-                        .b-build.b-empire__dungeon
-                            span Dungeon
-                        .b-build.b-empire__torture-chamber
-                            span  Torture Chamber
-                        .b-build.b-empire__magistrate
-                            span Magistrate
-                .b-build__section
-                    span.b-build__section-title Mage Units
-                    .b-build.b-empire__library
-                        span Library
-                    .row
-                        .b-build.b-empire__tower
-                            span Tower
-                        span.b-build__or OR
-                        .b-build.b-empire__elemental-circle
-                            span Elemental Circle
 
-                    .b-build.b-empire__arcane-tower
-                        span Arcane Tower
-                    .b-build.b-empire__ruined-temple
-                        span Ruined Temple
-                .b-build__section
-                    span.b-build__section-title Ranged Attack Units
-                    .b-build.b-empire__archery-range
-                        span Archery Range
-                    .b-build.b-empire__imperial-guild
-                        span Imperial Guild
-                .b-build__section
-                    span.b-build__section-title Support Units
-                    .col
-                        .b-build.b-empire__monastery
-                            span Monastery
-                        .b-build.b-empire__sanctuary
-                            span Sanctuary
-                        .b-build.b-empire__worship-house
-                            span Worship House
-                    span.b-build__or OR
-                    .col
-                        .b-build.b-empire__church
-                            span Church
-                        .b-build.b-empire__cathedral
-                            span Cathedral
-                        .b-build.b-empire__basilica
-                            span Basilica
-                .b-build__section
-                    span.b-build__section-title Flags
-                    .row
-                        .b-build.b-empire__flag-left
-                            span Left Flag
-                        .b-build.b-empire__flag-right
-                            span Right Flag
+            .b-tab-container
+                a.b-nav-tab.active(href='#empire', data-tab='empire') Empire
+                a.b-nav-tab(href='#undead', data-tab='undead') Undead Hordes
+                a.b-nav-tab(href='#elves', data-tab='elves') Elven Alliance
+                a.b-nav-tab(href='#clans', data-tab='clans') Mountain Clans
+                a.b-nav-tab(href='#legions', data-tab='legions') Legions of the Damned
 
-            .b-empire
-                img.b-empire__town(src='img/empire/empire-town.png', alt='', title='')
-                img.b-empire__walls(src='img/empire/empire-walls.png', alt='', title='')
-                img.b-empire__guild(src='img/empire/empire-guild.png', alt='', title='')
-                img.b-empire__magic-tower(src='img/empire/empire-magic-tower.png', alt='', title='')
-                img.b-empire__temple(src='img/empire/empire-temple.png', alt='', title='')
-                img.b-empire__stable(src='img/empire/empire-stable.png', alt='', title='')
-                img.b-empire__imperial-stable(src='img/empire/empire-imperial-stable.png', alt='', title='')
-                img.b-empire__fountain-of-life(src='img/empire/empire-fountain-of-life.png', alt='', title='')
-                img.b-empire__shrine(src='img/empire/empire-shrine.png', alt='', title='')
-                img.b-empire__holy-statue(src='img/empire/empire-holy-statue.png', alt='', title='')
-                img.b-empire__chapel(src='img/empire/empire-chapel.png', alt='', title='')
-                img.b-empire__dungeon(src='img/empire/empire-dungeon.png', alt='', title='')
-                img.b-empire__torture-chamber(src='img/empire/empire-torture-chamber.png', alt='', title='')
-                img.b-empire__magistrate(src='img/empire/empire-magistrate.png', alt='', title='')
-                img.b-empire__library(src='img/empire/empire-library.png', alt='', title='')
-                img.b-empire__elemental-circle(src='img/empire/empire-elemental-circle.png', alt='', title='')
-                img.b-empire__tower(src='img/empire/empire-tower.png', alt='', title='')
-                img.b-empire__arcane-tower(src='img/empire/empire-arcane-tower.png', alt='', title='')
-                img.b-empire__ruined-temple(src='img/empire/empire-ruined-temple.png', alt='', title='')
-                img.b-empire__archery-range(src='img/empire/empire-archery-range.png', alt='', title='')
-                img.b-empire__imperial-guild(src='img/empire/empire-imperial-guild.png', alt='', title='')
-                img.b-empire__monastery(src='img/empire/empire-monastery.png', alt='', title='')
-                img.b-empire__sanctuary(src='img/empire/empire-sanctuary.png', alt='', title='')
-                img.b-empire__worship-house(src='img/empire/empire-worship-house.png', alt='', title='')
-                img.b-empire__church(src='img/empire/empire-church.png', alt='', title='')
-                img.b-empire__cathedral(src='img/empire/empire-cathedral.png', alt='', title='')
-                img.b-empire__basilica(src='img/empire/empire-basilica.png', alt='', title='')
-                img.b-empire__flag-left(src='img/empire/empire-flag-left.gif', alt='', title='')
-                img.b-empire__flag-right(src='img/empire/empire-flag-right.gif', alt='', title='')
+            .b-tab-content
+                #empire.b-tab.active
+                    +empire-town
+                #undead.b-tab
+                    +undead-town
+                #elves.b-tab
+                    +elves-town
+                #clans.b-tab
+                    +clans-town
+                #legions.b-tab
+                    +legions-town

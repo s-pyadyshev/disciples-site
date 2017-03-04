@@ -1,21 +1,25 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
  */
+/* Document
+   ========================================================================== */
 html {
   font-family: sans-serif;
   /* 1 */
   line-height: 1.15;
   /* 2 */
+  -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
   /* 3 */
 }
 
+/* Sections
+   ========================================================================== */
 /**
  * Remove the margin in all browsers (opinionated).
  */
@@ -23,66 +27,73 @@ body {
   margin: 0;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
 /**
  * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
  */
 article,
 aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-main,
-menu,
 nav,
-section,
-summary {
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
   /* 1 */
   display: block;
 }
 
 /**
- * Add the correct display in IE 9-.
+ * Add the correct margin in IE 8.
  */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  *zoom: 1;
-  *display: inline;
+figure {
+  margin: 1em 40px;
 }
 
 /**
- * Add the correct display in iOS 4-7.
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
  */
-audio:not([controls]) {
-  display: none;
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
   height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
  */
-progress {
-  vertical-align: baseline;
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
-/**
- * Add the correct display in IE 10-.
- * 1. Add the correct display in IE.
- */
-template,
-[hidden] {
-  display: none;
-}
-
-/* Links
+/* Text-level semantics
    ========================================================================== */
 /**
  * 1. Remove the gray background on active links in IE 10.
@@ -92,7 +103,6 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-          text-decoration-skip: objects;
   /* 2 */
 }
 
@@ -105,8 +115,6 @@ a:hover {
   outline-width: 0;
 }
 
-/* Text-level semantics
-   ========================================================================== */
 /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -137,19 +145,23 @@ strong {
 }
 
 /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
  * Add the correct font style in Android 4.3-.
  */
 dfn {
   font-style: italic;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /**
@@ -190,6 +202,22 @@ sup {
 /* Embedded content
    ========================================================================== */
 /**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
  * Remove the border on images inside links in IE 10-.
  */
 img {
@@ -201,49 +229,12 @@ img {
  */
 svg:not(:root) {
   overflow: hidden;
-  _zoom: 1;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
 }
 
 /* Forms
    ========================================================================== */
 /**
- * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
 button,
@@ -251,17 +242,14 @@ input,
 optgroup,
 select,
 textarea {
-  font: inherit;
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
   /* 1 */
   margin: 0;
   /* 2 */
-}
-
-/**
- * Restore the font weight unset by the previous rule.
- */
-optgroup {
-  font-weight: bold;
 }
 
 /**
@@ -294,8 +282,6 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
   /* 2 */
 }
 
@@ -336,7 +322,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -348,6 +335,17 @@ legend {
   /* 3 */
   white-space: normal;
   /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
 }
 
 /**
@@ -363,7 +361,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -383,29 +382,17 @@ textarea {
  */
 [type="search"] {
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
-          appearance: none;
-}
-
-/**
- * Correct the text style of placeholders in Chrome, Edge, and Safari.
- */
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-  filter: alpha(opacity=54)\9;
 }
 
 /**
@@ -414,81 +401,93 @@ textarea {
  */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-          appearance: button;
   /* 1 */
   font: inherit;
   /* 2 */
 }
 
-@font-face {
-  font-family: 'robotoregular';
-  src: url("../fonts/roboto-regular-webfont.eot");
-  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
 }
 
 /*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
 }
 
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
 }
 
-.icon-email {
-  @include sprite($icon-email);
-}
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-.input-hidden {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  filter: alpha(opacity=0)\9;
-  overflow: hidden;
-  _zoom: 1;
-  position: absolute;
-  z-index: -1;
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
 }
 
-/* https://css-tricks.com/box-sizing */
-*, *:before, *:after {
-  box-sizing: inherit;
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: url(../img/cursor-sword.png), default;
+}
+
+img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 input,
 select,
 textarea {
   border-radius: 0;
-  outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 input[type="text"],
@@ -507,11 +506,109 @@ svg {
   fill: currentColor;
 }
 
-body {
-  cursor: url(../img/cursor-sword.png), default;
+.b-btn--save-town {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  cursor: pointer;
+}
+
+.b-build-container {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 520px;
+}
+
+.b-build {
+  margin-right: 5px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.b-build--clans.is-active span {
+  background: #C6C7D6;
+  color: #fff;
+}
+
+.b-build--empire.is-active span {
+  background: #000073;
+  color: #fff;
+}
+
+.b-build--undead.is-active span {
+  background: #293010;
+  color: #fff;
+}
+
+.b-build--legions.is-active span {
+  background: #6B0C08;
+  color: #fff;
+}
+
+.b-build span {
+  padding: 0 5px;
+  border: 1px solid #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.b-build__or {
+  margin-right: 5px;
+}
+
+.b-build__section {
+  margin-bottom: 5px;
+}
+
+.b-build__section-title {
+  display: block;
+  font-weight: 700;
+}
+
+.b-clans {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+}
+
+.b-clans img {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 600px;
+}
+
+.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
+  display: block;
+}
+
+.b-clans__brewery {
+  z-index: 1;
+}
+
+.b-clans__town {
+  z-index: 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .b-empire {
+  display: inline-block;
   position: relative;
   width: 640px;
   height: 600px;
@@ -527,120 +624,6 @@ body {
 
 .b-empire img.b-empire__town, .b-empire img.b-empire__walls {
   display: block;
-}
-
-.b-main-menu {
-  position: relative;
-  width: 800px;
-  height: 600px;
-  background: url("../img/main-menu.jpg");
-}
-
-.b-main-menu__item {
-  height: 52px;
-  margin-bottom: 7px;
-}
-
-.b-main-menu__link {
-  display: inline-block;
-  *zoom: 1;
-  *display: inline;
-  width: 100%;
-  height: 52px;
-  line-height: 50px;
-  text-decoration: none;
-  background: url("../img/main-menu-btn.png");
-  color: #000;
-}
-
-.b-main-menu__link:hover {
-  background: url("../img/main-menu-btn-hover.png");
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: #000;
-}
-
-.b-main-menu__link:active {
-  background: url("../img/main-menu-btn-active.png");
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: #000;
-}
-
-.b-main-menu__list {
-  position: absolute;
-  top: 10px;
-  right: 17px;
-  width: 306px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.b-container {
-  -js-display: flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 100vh;
-}
-
-.b-build-container {
-  width: 400px;
-}
-
-.b-build {
-  margin-right: 5px;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.b-build span {
-  padding: 0 5px;
-  border: 1px solid #000;
-}
-
-.b-build__or {
-  margin-right: 5px;
-}
-
-.b-build__section {
-  margin-bottom: 20px;
-}
-
-.b-build__section-title {
-  display: block;
-  font-weight: 700;
-}
-
-.b-build.is-active span {
-  background: blue;
-  color: #fff;
-}
-
-.b-wrapper {
-  -js-display: flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.row {
-  -js-display: flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.col {
-  display: inline-block;
-  *zoom: 1;
-  *display: inline;
-  vertical-align: top;
 }
 
 .b-empire__town {
@@ -757,4 +740,156 @@ body {
 
 .b-empire__flag-right {
   z-index: 105;
+}
+
+.b-legions {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+}
+
+.b-legions img {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 600px;
+}
+
+.b-legions img.b-legions__town {
+  display: block;
+}
+
+.b-legions__town {
+  z-index: 0;
+}
+
+.b-main-menu {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: url("../img/main-menu.jpg");
+}
+
+.b-main-menu__item {
+  height: 52px;
+  margin-bottom: 7px;
+}
+
+.b-main-menu__link {
+  display: inline-block;
+  width: 100%;
+  height: 52px;
+  line-height: 50px;
+  text-decoration: none;
+  background: url("../img/main-menu-btn.png");
+  color: #000;
+}
+
+.b-main-menu__link:hover {
+  background: url("../img/main-menu-btn-hover.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #000;
+}
+
+.b-main-menu__link:active {
+  background: url("../img/main-menu-btn-active.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #000;
+}
+
+.b-main-menu__list {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  width: 306px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.b-tab {
+  padding: 20px;
+  display: none;
+}
+
+.b-tab.active {
+  display: block;
+}
+
+.b-nav-tab {
+  display: inline-block;
+  padding: 20px;
+}
+
+.b-nav-tab.active {
+  color: #ff4200;
+}
+
+.b-undead {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+}
+
+.b-undead img {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 600px;
+}
+
+.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
+  display: block;
+}
+
+.b-undead__dragon-cemetery {
+  z-index: 2;
+}
+
+.b-undead__evil-monastery {
+  z-index: 1;
+}
+
+.b-undead__graveyard {
+  z-index: 1;
+}
+
+.b-undead__town {
+  z-index: 0;
+}
+
+.b-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only all and (max-width: 767px) {
+  .b-wrapper--town {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }

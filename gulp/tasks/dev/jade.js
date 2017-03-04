@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     config = require('../../config'),
     prettify = require('gulp-html-prettify');
 
-gulp.task('jade', ['svg'], config.wrapPipe(function(success, error) {
+gulp.task('jade', config.wrapPipe(function(success, error) {
 
     return gulp.src('src/**/*.jade')
         /*only pass unchanged *main* files and *all* the partials*/

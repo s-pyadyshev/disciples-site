@@ -1,16 +1,40 @@
 .b-build-container {
-  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 520px;
 }
 
 .b-build {
   margin-right: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   cursor: pointer;
+
+  &--clans.is-active span {
+    background: $c-clans-bg;
+    color: $c-clans-text;
+  }
+
+  &--empire.is-active span {
+    background: $c-empire-bg;
+    color: $c-empire-text;
+  }
+
+  &--undead.is-active span {
+    background: $c-undead-bg;
+    color: $c-undead-text;
+  }
+
+  &--legions.is-active span {
+    background: $c-legions-bg;
+    color: $c-legions-text;
+  }
 }
 
 .b-build span {
   padding: 0 5px;
   border: 1px solid #000;
+  user-select: none;
 }
 
 .b-build__or {
@@ -18,15 +42,10 @@
 }
 
 .b-build__section {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .b-build__section-title {
   display: block;
   font-weight: 700;
-}
-
-.b-build.is-active span {
-  background: blue;
-  color: #fff;
 }

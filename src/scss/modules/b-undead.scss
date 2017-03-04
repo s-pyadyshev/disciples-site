@@ -1,0 +1,33 @@
+.b-undead {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+}
+
+.b-undead img {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 600px;
+}
+
+.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
+  display: block;
+}
+
+.b-undead {
+  &__dragon-cemetery {
+    z-index: 2;
+  }
+  &__evil-monastery {
+    z-index: 1;
+  }
+  &__graveyard {
+    z-index: 1;
+  }
+  &__town {
+    z-index: 0;
+  }
+}

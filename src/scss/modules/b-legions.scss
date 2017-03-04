@@ -1,0 +1,25 @@
+.b-legions {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+}
+
+.b-legions img {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 600px;
+}
+
+.b-legions img.b-legions__town {
+  display: block;
+}
+
+.b-legions {
+
+  &__town {
+    z-index: 0;
+  }
+}

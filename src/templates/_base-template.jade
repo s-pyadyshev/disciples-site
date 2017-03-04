@@ -18,7 +18,8 @@ html(lang='en')
         block styles
             link(href='css/main.css' rel='stylesheet')
         block scripts-head
-            script(src="js/jquery/jquery.min.js")
+            script(src="js/dom-to-image.min.js")
+            script(src="js/FileSaver.min.js")
         block head
         title= pageTitle || ''
         meta(name='description' content=pageDescription || '')
@@ -31,6 +32,7 @@ html(lang='en')
         include _footer
 
         block scripts-body
+            script(src='js/vendor.js')
             script(src='js/app.js')
 
 

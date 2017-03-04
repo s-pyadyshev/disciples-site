@@ -35,39 +35,8 @@ gulp.task('js-app', config.wrapPipe(function(success, error) {
             indent: true
         }).on('error', error))
         .pipe(sourcemaps.init())
-        // .pipe(uglify().on('error', error))
+        .pipe(uglify().on('error', error))
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.js.dest.app))
 }));
-
-// gulp.task('browserify', ['lint'], function () {
-//   var files = [
-//     'app.bundle.js'
-//   ];
-//   var tasks = files.map(function (entry) {
-//     return browserify({
-//       entries: ['src/js/' + entry],
-//       debug: true
-//     })
-//       .transform(babel)
-//       .bundle()
-//       .on('error', $.notify.onError({
-//         title: "Scripts Error",
-//         message: "<%= error.message %>"
-//       }))
-//       .pipe(vinylSourceStream(entry))
-//       // .pipe($.rename({
-//       //   extname: '.bundle.js'
-//       // }))
-//       .pipe(gulp.dest('build/js'))
-//   });
-//   return es.merge.apply(null, tasks);
-// });
-
-// gulp.task('lint', () => {
-//   return gulp.src('src/js/**/*')
-//     .pipe($.eslint())
-//     .pipe($.eslint.format())
-//     .pipe($.eslint.failAfterError());
-// });
 
