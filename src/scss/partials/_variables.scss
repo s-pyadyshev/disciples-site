@@ -7,6 +7,9 @@ $desktop: "only all and (min-width: 1024px)";
 $g-font-size: 16px;
 $g-line-height: 1.5;
 
+// Buttons
+$c-btn-text-hover: #fff;
+
 // Colors
 $g-color-primary: ;
 $g-color-secondary: ;
@@ -38,3 +41,6 @@ $c-link: ;
 $c-link-visited: ;
 $c-link-hover: ;
 $c-link-active: ;
+
+// Animations
+$t-transition-duration: 0.1s;

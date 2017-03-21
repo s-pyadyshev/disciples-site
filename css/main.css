@@ -506,10 +506,65 @@ svg {
   fill: currentColor;
 }
 
+.b-btn--save {
+  max-width: 120px;
+  padding: 2px 5px;
+  text-align: center;
+}
+
 .b-btn--save-town {
   position: absolute;
   bottom: -35px;
   left: 0;
+  cursor: pointer;
+}
+
+.b-btn--save-empire {
+  border: 2px solid #000073;
+}
+
+.b-btn--save-empire:hover, .b-btn--save-empire:active {
+  background-color: #000073;
+  color: #fff;
+}
+
+.b-btn--save-undead {
+  border: 2px solid #293010;
+}
+
+.b-btn--save-undead:hover, .b-btn--save-undead:active {
+  background-color: #293010;
+  color: #fff;
+}
+
+.b-btn--save-elves {
+  border: 2px solid #7B8948;
+}
+
+.b-btn--save-elves:hover, .b-btn--save-elves:active {
+  background-color: #7B8948;
+  color: #fff;
+}
+
+.b-btn--save-clans {
+  border: 2px solid #C6C7D6;
+}
+
+.b-btn--save-clans:hover, .b-btn--save-clans:active {
+  background-color: #C6C7D6;
+  color: #fff;
+}
+
+.b-btn--save-legions {
+  border: 2px solid #6B0C08;
+}
+
+.b-btn--save-legions:hover, .b-btn--save-legions:active {
+  background-color: #6B0C08;
+  color: #fff;
+}
+
+.b-btn:hover {
   cursor: pointer;
 }
 
@@ -524,6 +579,36 @@ svg {
   margin-right: 5px;
   margin-bottom: 3px;
   cursor: pointer;
+}
+
+.b-build:hover span {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.b-build--empire:hover span {
+  background-color: #000073;
+  color: #fff;
+}
+
+.b-build--undead:hover span {
+  background-color: #293010;
+  color: #fff;
+}
+
+.b-build--elves:hover span {
+  background-color: #7B8948;
+  color: #fff;
+}
+
+.b-build--clans:hover span {
+  background-color: #C6C7D6;
+  color: #fff;
+}
+
+.b-build--legions:hover span {
+  background-color: #6B0C08;
+  color: #fff;
 }
 
 .b-build--clans.is-active span {
@@ -583,16 +668,16 @@ svg {
   height: 600px;
 }
 
-.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
-  display: block;
-}
-
 .b-clans__brewery {
   z-index: 1;
 }
 
 .b-clans__town {
   z-index: 0;
+}
+
+.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
+  display: block;
 }
 
 .row {
@@ -605,6 +690,25 @@ svg {
 .col {
   display: inline-block;
   vertical-align: top;
+}
+
+.b-elves {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+}
+
+.b-elves img {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 600px;
+}
+
+.b-elves img.b-elves__town {
+  display: block;
 }
 
 .b-empire {
@@ -622,124 +726,12 @@ svg {
   height: 600px;
 }
 
-.b-empire img.b-empire__town, .b-empire img.b-empire__walls {
-  display: block;
-}
-
 .b-empire__town {
   z-index: 0;
 }
 
-.b-empire__walls {
-  z-index: 100;
-}
-
-.b-empire__guild {
-  z-index: 99;
-}
-
-.b-empire__magic-tower {
-  z-index: 98;
-}
-
-.b-empire__temple {
-  z-index: 105;
-}
-
-.b-empire__stable {
-  z-index: 103;
-}
-
-.b-empire__imperial-stable {
-  z-index: 104;
-}
-
-.b-empire__fountain-of-life {
-  z-index: 100;
-}
-
-.b-empire__shrine {
-  z-index: 100;
-}
-
-.b-empire__holy-statue {
-  z-index: 99;
-}
-
-.b-empire__chapel {
-  z-index: 99;
-}
-
-.b-empire__dungeon {
-  z-index: 103;
-}
-
-.b-empire__torture-chamber {
-  z-index: 102;
-}
-
-.b-empire__magistrate {
-  z-index: 101;
-}
-
-.b-empire__library {
-  z-index: 99;
-}
-
-.b-empire__elemental-circle {
-  z-index: 101;
-}
-
-.b-empire__tower {
-  z-index: 101;
-}
-
-.b-empire__arcane-tower {
-  z-index: 101;
-}
-
-.b-empire__ruined-temple {
-  z-index: 99;
-}
-
-.b-empire__archery-range {
-  z-index: 102;
-}
-
-.b-empire__imperial-guild {
-  z-index: 101;
-}
-
-.b-empire__monastery {
-  z-index: 97;
-}
-
-.b-empire__sanctuary {
-  z-index: 97;
-}
-
-.b-empire__worship-house {
-  z-index: 97;
-}
-
-.b-empire__church {
-  z-index: 97;
-}
-
-.b-empire__cathedral {
-  z-index: 97;
-}
-
-.b-empire__basilica {
-  z-index: 97;
-}
-
-.b-empire__flag-left {
-  z-index: 105;
-}
-
-.b-empire__flag-right {
-  z-index: 105;
+.b-empire img.b-empire__town, .b-empire img.b-empire__walls {
+  display: block;
 }
 
 .b-legions {
@@ -757,12 +749,12 @@ svg {
   height: 600px;
 }
 
-.b-legions img.b-legions__town {
-  display: block;
-}
-
 .b-legions__town {
   z-index: 0;
+}
+
+.b-legions img.b-legions__town {
+  display: block;
 }
 
 .b-main-menu {
@@ -847,10 +839,6 @@ svg {
   height: 600px;
 }
 
-.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
-  display: block;
-}
-
 .b-undead__dragon-cemetery {
   z-index: 2;
 }
@@ -865,6 +853,10 @@ svg {
 
 .b-undead__town {
   z-index: 0;
+}
+
+.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
+  display: block;
 }
 
 .b-wrapper {

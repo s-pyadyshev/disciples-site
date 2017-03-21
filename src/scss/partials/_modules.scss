@@ -1,8 +1,62 @@
 .b-btn {
+
+    &--save {
+        max-width: 120px;
+        padding: 2px 5px;
+        text-align: center;
+    }
     &--save-town {
         position: absolute;
         bottom: -35px;
         left: 0;
+        cursor: pointer;
+    }
+    &--save-empire {
+        border: 2px solid $c-empire-bg;
+
+        &:hover,
+        &:active {
+            background-color: $c-empire-bg;
+            color: $c-btn-text-hover;
+        }
+    }
+    &--save-undead {
+        border: 2px solid $c-undead-bg;
+
+        &:hover,
+        &:active {
+            background-color: $c-undead-bg;
+            color: $c-btn-text-hover;
+        }
+    }
+    &--save-elves {
+        border: 2px solid $c-elves-bg;
+
+        &:hover,
+        &:active {
+            background-color: $c-elves-bg;
+            color: $c-btn-text-hover;
+        }
+    }
+    &--save-clans {
+        border: 2px solid $c-clans-bg;
+
+        &:hover,
+        &:active {
+            background-color: $c-clans-bg;
+            color: $c-btn-text-hover;
+        }
+    }
+    &--save-legions {
+        border: 2px solid $c-legions-bg;
+
+        &:hover,
+        &:active {
+            background-color: $c-legions-bg;
+            color: $c-btn-text-hover;
+        }
+    }
+    &:hover {
         cursor: pointer;
     }
 }
@@ -18,6 +72,45 @@
   margin-right: 5px;
   margin-bottom: 3px;
   cursor: pointer;
+
+  &:hover span {
+    transition-duration: $t-transition-duration;
+  }
+
+  &--empire {
+    &:hover span {
+      background-color: $c-empire-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
+  &--undead {
+    &:hover span {
+      background-color: $c-undead-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
+  &--elves {
+    &:hover span {
+      background-color: $c-elves-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
+  &--clans {
+    &:hover span {
+      background-color: $c-clans-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
+  &--legions {
+    &:hover span {
+      background-color: $c-legions-bg;
+      color: $c-btn-text-hover;
+    }
+  }
 
   &--clans.is-active span {
     background: $c-clans-bg;
@@ -64,21 +157,14 @@
   position: relative;
   width: 640px;
   height: 600px;
-}
 
-.b-clans img {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 640px;
-  height: 600px;
-}
-
-.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
-  display: block;
-}
-
-.b-clans {
+  img {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 640px;
+    height: 600px;
+  }
 
   &__brewery {
     z-index: 1;
@@ -87,6 +173,10 @@
   &__town {
     z-index: 0;
   }
+}
+
+.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
+  display: block;
 }
 
 .b-container {
@@ -105,165 +195,70 @@
   vertical-align: top;
 }
 
-.b-empire {
+.b-elves {
   display: inline-block;
   position: relative;
   width: 640px;
   height: 600px;
 }
 
-.b-empire img {
+.b-elves img {
   display: none;
   position: absolute;
   top: 0;
   width: 640px;
   height: 600px;
+}
+
+.b-elves img.b-elves__town {
+  display: block;
+}
+
+.b-empire {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+
+  img {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 640px;
+    height: 600px;
+  }
+
+  &__town {
+    z-index: 0;
+  }
 }
 
 .b-empire img.b-empire__town, .b-empire img.b-empire__walls {
   display: block;
 }
 
-.b-empire__town {
-  z-index: 0;
-}
-
-.b-empire__walls {
-  z-index: 100;
-}
-
-.b-empire__guild {
-  z-index: 99;
-}
-
-.b-empire__magic-tower {
-  z-index: 98;
-}
-
-.b-empire__temple {
-  z-index: 105;
-}
-
-.b-empire__stable {
-  z-index: 103;
-}
-
-.b-empire__imperial-stable {
-  z-index: 104;
-}
-
-.b-empire__fountain-of-life {
-  z-index: 100;
-}
-
-.b-empire__shrine {
-  z-index: 100;
-}
-
-.b-empire__holy-statue {
-  z-index: 99;
-}
-
-.b-empire__chapel {
-  z-index: 99;
-}
-
-.b-empire__dungeon {
-  z-index: 103;
-}
-
-.b-empire__torture-chamber {
-  z-index: 102;
-}
-
-.b-empire__magistrate {
-  z-index: 101;
-}
-
-.b-empire__library {
-  z-index: 99;
-}
-
-.b-empire__elemental-circle {
-  z-index: 101;
-}
-
-.b-empire__tower {
-  z-index: 101;
-}
-
-.b-empire__arcane-tower {
-  z-index: 101;
-}
-
-.b-empire__ruined-temple {
-  z-index: 99;
-}
-
-.b-empire__archery-range {
-  z-index: 102;
-}
-
-.b-empire__imperial-guild {
-  z-index: 101;
-}
-
-.b-empire__monastery {
-  z-index: 97;
-}
-
-.b-empire__sanctuary {
-  z-index: 97;
-}
-
-.b-empire__worship-house {
-  z-index: 97;
-}
-
-.b-empire__church {
-  z-index: 97;
-}
-
-.b-empire__cathedral {
-  z-index: 97;
-}
-
-.b-empire__basilica {
-  z-index: 97;
-}
-
-.b-empire__flag-left {
-  z-index: 105;
-}
-
-.b-empire__flag-right {
-  z-index: 105;
-}
 
 .b-legions {
   display: inline-block;
   position: relative;
   width: 640px;
   height: 600px;
-}
 
-.b-legions img {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 640px;
-  height: 600px;
-}
-
-.b-legions img.b-legions__town {
-  display: block;
-}
-
-.b-legions {
+  img {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 640px;
+    height: 600px;
+  }
 
   &__town {
     z-index: 0;
   }
+}
+
+.b-legions img.b-legions__town {
+  display: block;
 }
 
 .b-main-menu {
@@ -338,21 +333,15 @@
   position: relative;
   width: 640px;
   height: 600px;
-}
 
-.b-undead img {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 640px;
-  height: 600px;
-}
+  img {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 640px;
+    height: 600px;
+  }
 
-.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
-  display: block;
-}
-
-.b-undead {
   &__dragon-cemetery {
     z-index: 2;
   }
@@ -365,6 +354,10 @@
   &__town {
     z-index: 0;
   }
+}
+
+.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
+  display: block;
 }
 
 .b-wrapper {

@@ -3,21 +3,14 @@
   position: relative;
   width: 640px;
   height: 600px;
-}
 
-.b-clans img {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 640px;
-  height: 600px;
-}
-
-.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
-  display: block;
-}
-
-.b-clans {
+  img {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 640px;
+    height: 600px;
+  }
 
   &__brewery {
     z-index: 1;
@@ -26,4 +19,8 @@
   &__town {
     z-index: 0;
   }
+}
+
+.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
+  display: block;
 }

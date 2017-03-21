@@ -10,6 +10,45 @@
   margin-bottom: 3px;
   cursor: pointer;
 
+  &:hover span {
+    transition-duration: $t-transition-duration;
+  }
+
+  &--empire {
+    &:hover span {
+      background-color: $c-empire-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
+  &--undead {
+    &:hover span {
+      background-color: $c-undead-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
+  &--elves {
+    &:hover span {
+      background-color: $c-elves-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
+  &--clans {
+    &:hover span {
+      background-color: $c-clans-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
+  &--legions {
+    &:hover span {
+      background-color: $c-legions-bg;
+      color: $c-btn-text-hover;
+    }
+  }
+
   &--clans.is-active span {
     background: $c-clans-bg;
     color: $c-clans-text;
