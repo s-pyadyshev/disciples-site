@@ -1,17 +1,23 @@
-.b-build-container {
+.build-container {
   display: inline-block;
   vertical-align: top;
   position: relative;
   width: 520px;
 }
 
-.b-build {
+.build {
   margin-right: 5px;
   margin-bottom: 3px;
   cursor: pointer;
 
   &:hover span {
     transition-duration: $t-transition-duration;
+  }
+
+  span {
+    padding: 0 5px;
+    border: 1px solid #000;
+    user-select: none;
   }
 
   &--empire {
@@ -68,23 +74,17 @@
     background: $c-legions-bg;
     color: $c-legions-text;
   }
-}
 
-.b-build span {
-  padding: 0 5px;
-  border: 1px solid #000;
-  user-select: none;
-}
+  &__or {
+    margin-right: 5px;
+  }
 
-.b-build__or {
-  margin-right: 5px;
-}
+  &__section {
+    margin-bottom: 5px;
+  }
 
-.b-build__section {
-  margin-bottom: 5px;
-}
-
-.b-build__section-title {
-  display: block;
-  font-weight: 700;
+  &__section-title {
+    display: block;
+    font-weight: 700;
+  }
 }

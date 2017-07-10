@@ -1,4 +1,4 @@
-.b-undead {
+.clans {
   display: inline-block;
   position: relative;
   width: 640px;
@@ -10,22 +10,18 @@
     top: 0;
     width: 640px;
     height: 600px;
+
+    &.clans__town, 
+    &.clans__walls {
+      display: block;
+    }
   }
 
-  &__dragon-cemetery {
-    z-index: 2;
-  }
-  &__evil-monastery {
+  &__brewery {
     z-index: 1;
   }
-  &__graveyard {
-    z-index: 1;
-  }
+
   &__town {
     z-index: 0;
   }
-}
-
-.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
-  display: block;
 }

@@ -1,0 +1,19 @@
+.tab {
+  display: none;
+  padding: 20px;
+  border: 1px solid #000;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+
+.nav-tab {
+  display: inline-block;
+  padding: 20px;
+
+  &.is-active {
+    color: #ff4200;
+  }
+}

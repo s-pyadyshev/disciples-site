@@ -506,132 +506,88 @@ svg {
   fill: currentColor;
 }
 
-.b-btn--save {
+.btn--save {
   max-width: 120px;
   padding: 2px 5px;
+  margin-top: 10px;
   text-align: center;
 }
 
-.b-btn--save-town {
+.btn--save-town {
   position: absolute;
   bottom: -35px;
   left: 0;
   cursor: pointer;
 }
 
-.b-btn--save-empire {
+.btn--save-empire {
   border: 2px solid #000073;
 }
 
-.b-btn--save-empire:hover, .b-btn--save-empire:active {
+.btn--save-empire:hover, .btn--save-empire:active {
   background-color: #000073;
   color: #fff;
 }
 
-.b-btn--save-undead {
+.btn--save-undead {
   border: 2px solid #293010;
 }
 
-.b-btn--save-undead:hover, .b-btn--save-undead:active {
+.btn--save-undead:hover, .btn--save-undead:active {
   background-color: #293010;
   color: #fff;
 }
 
-.b-btn--save-elves {
+.btn--save-elves {
   border: 2px solid #7B8948;
 }
 
-.b-btn--save-elves:hover, .b-btn--save-elves:active {
+.btn--save-elves:hover, .btn--save-elves:active {
   background-color: #7B8948;
   color: #fff;
 }
 
-.b-btn--save-clans {
+.btn--save-clans {
   border: 2px solid #C6C7D6;
 }
 
-.b-btn--save-clans:hover, .b-btn--save-clans:active {
+.btn--save-clans:hover, .btn--save-clans:active {
   background-color: #C6C7D6;
   color: #fff;
 }
 
-.b-btn--save-legions {
+.btn--save-legions {
   border: 2px solid #6B0C08;
 }
 
-.b-btn--save-legions:hover, .b-btn--save-legions:active {
+.btn--save-legions:hover, .btn--save-legions:active {
   background-color: #6B0C08;
   color: #fff;
 }
 
-.b-btn:hover {
+.btn:hover {
   cursor: pointer;
 }
 
-.b-build-container {
+.build-container {
   display: inline-block;
   vertical-align: top;
   position: relative;
   width: 520px;
 }
 
-.b-build {
+.build {
   margin-right: 5px;
   margin-bottom: 3px;
   cursor: pointer;
 }
 
-.b-build:hover span {
+.build:hover span {
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
 }
 
-.b-build--empire:hover span {
-  background-color: #000073;
-  color: #fff;
-}
-
-.b-build--undead:hover span {
-  background-color: #293010;
-  color: #fff;
-}
-
-.b-build--elves:hover span {
-  background-color: #7B8948;
-  color: #fff;
-}
-
-.b-build--clans:hover span {
-  background-color: #C6C7D6;
-  color: #fff;
-}
-
-.b-build--legions:hover span {
-  background-color: #6B0C08;
-  color: #fff;
-}
-
-.b-build--clans.is-active span {
-  background: #C6C7D6;
-  color: #fff;
-}
-
-.b-build--empire.is-active span {
-  background: #000073;
-  color: #fff;
-}
-
-.b-build--undead.is-active span {
-  background: #293010;
-  color: #fff;
-}
-
-.b-build--legions.is-active span {
-  background: #6B0C08;
-  color: #fff;
-}
-
-.b-build span {
+.build span {
   padding: 0 5px;
   border: 1px solid #000;
   -webkit-user-select: none;
@@ -640,27 +596,72 @@ svg {
           user-select: none;
 }
 
-.b-build__or {
+.build--empire:hover span {
+  background-color: #000073;
+  color: #fff;
+}
+
+.build--undead:hover span {
+  background-color: #293010;
+  color: #fff;
+}
+
+.build--elves:hover span {
+  background-color: #7B8948;
+  color: #fff;
+}
+
+.build--clans:hover span {
+  background-color: #C6C7D6;
+  color: #fff;
+}
+
+.build--legions:hover span {
+  background-color: #6B0C08;
+  color: #fff;
+}
+
+.build--clans.is-active span {
+  background: #C6C7D6;
+  color: #fff;
+}
+
+.build--empire.is-active span {
+  background: #000073;
+  color: #fff;
+}
+
+.build--undead.is-active span {
+  background: #293010;
+  color: #fff;
+}
+
+.build--legions.is-active span {
+  background: #6B0C08;
+  color: #fff;
+}
+
+.build__or {
   margin-right: 5px;
 }
 
-.b-build__section {
+.build__section {
   margin-bottom: 5px;
 }
 
-.b-build__section-title {
+.build__section-title {
   display: block;
   font-weight: 700;
 }
 
-.b-clans {
+.clans {
   display: inline-block;
   position: relative;
   width: 640px;
   height: 600px;
 }
 
-.b-clans img {
+.clans img {
   display: none;
   position: absolute;
   top: 0;
@@ -668,16 +669,16 @@ svg {
   height: 600px;
 }
 
-.b-clans__brewery {
+.clans img.clans__town, .clans img.clans__walls {
+  display: block;
+}
+
+.clans__brewery {
   z-index: 1;
 }
 
-.b-clans__town {
+.clans__town {
   z-index: 0;
-}
-
-.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
-  display: block;
 }
 
 .row {
@@ -692,14 +693,14 @@ svg {
   vertical-align: top;
 }
 
-.b-elves {
+.elves {
   display: inline-block;
   position: relative;
   width: 640px;
   height: 600px;
 }
 
-.b-elves img {
+.elves img {
   display: none;
   position: absolute;
   top: 0;
@@ -707,18 +708,18 @@ svg {
   height: 600px;
 }
 
-.b-elves img.b-elves__town {
+.elves img.elves__town {
   display: block;
 }
 
-.b-empire {
+.empire {
   display: inline-block;
   position: relative;
   width: 640px;
   height: 600px;
 }
 
-.b-empire img {
+.empire img {
   display: none;
   position: absolute;
   top: 0;
@@ -726,22 +727,22 @@ svg {
   height: 600px;
 }
 
-.b-empire__town {
+.empire img.empire__town, .empire img.empire__walls {
+  display: block;
+}
+
+.empire__town {
   z-index: 0;
 }
 
-.b-empire img.b-empire__town, .b-empire img.b-empire__walls {
-  display: block;
-}
-
-.b-legions {
+.legions {
   display: inline-block;
   position: relative;
   width: 640px;
   height: 600px;
 }
 
-.b-legions img {
+.legions img {
   display: none;
   position: absolute;
   top: 0;
@@ -749,27 +750,27 @@ svg {
   height: 600px;
 }
 
-.b-legions__town {
-  z-index: 0;
-}
-
-.b-legions img.b-legions__town {
+.legions img.legions__town {
   display: block;
 }
 
-.b-main-menu {
+.legions__town {
+  z-index: 0;
+}
+
+.main-menu {
   position: relative;
   width: 800px;
   height: 600px;
   background: url("../img/main-menu.jpg");
 }
 
-.b-main-menu__item {
+.main-menu__item {
   height: 52px;
   margin-bottom: 7px;
 }
 
-.b-main-menu__link {
+.main-menu__link {
   display: inline-block;
   width: 100%;
   height: 52px;
@@ -779,21 +780,21 @@ svg {
   color: #000;
 }
 
-.b-main-menu__link:hover {
+.main-menu__link:hover {
   background: url("../img/main-menu-btn-hover.png");
   background-repeat: no-repeat;
   text-decoration: none;
   color: #000;
 }
 
-.b-main-menu__link:active {
+.main-menu__link:active {
   background: url("../img/main-menu-btn-active.png");
   background-repeat: no-repeat;
   text-decoration: none;
   color: #000;
 }
 
-.b-main-menu__list {
+.main-menu__list {
   position: absolute;
   top: 10px;
   right: 17px;
@@ -806,32 +807,33 @@ svg {
   text-transform: uppercase;
 }
 
-.b-tab {
-  padding: 20px;
+.tab {
   display: none;
+  padding: 20px;
+  border: 1px solid #000;
 }
 
-.b-tab.active {
+.tab.is-active {
   display: block;
 }
 
-.b-nav-tab {
+.nav-tab {
   display: inline-block;
   padding: 20px;
 }
 
-.b-nav-tab.active {
+.nav-tab.is-active {
   color: #ff4200;
 }
 
-.b-undead {
+.undead {
   display: inline-block;
   position: relative;
   width: 640px;
   height: 600px;
 }
 
-.b-undead img {
+.undead img {
   display: none;
   position: absolute;
   top: 0;
@@ -839,27 +841,27 @@ svg {
   height: 600px;
 }
 
-.b-undead__dragon-cemetery {
-  z-index: 2;
-}
-
-.b-undead__evil-monastery {
-  z-index: 1;
-}
-
-.b-undead__graveyard {
-  z-index: 1;
-}
-
-.b-undead__town {
-  z-index: 0;
-}
-
-.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
+.undead img.undead__town, .undead img.undead__walls {
   display: block;
 }
 
-.b-wrapper {
+.undead__dragon-cemetery {
+  z-index: 2;
+}
+
+.undead__evil-monastery {
+  z-index: 1;
+}
+
+.undead__graveyard {
+  z-index: 1;
+}
+
+.undead__town {
+  z-index: 0;
+}
+
+.wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -876,7 +878,7 @@ svg {
 }
 
 @media only all and (max-width: 767px) {
-  .b-wrapper--town {
+  .wrapper--town {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

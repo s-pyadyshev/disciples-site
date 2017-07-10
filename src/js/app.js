@@ -13,14 +13,14 @@ function buildTown(town, build) {
             var self = this;
 
             if (self.classList.contains('is-active') === false) {
-                var btnClass = self.getAttribute('class').substr(8).slice(0, -buildBtnLength);
+                var btnClass = self.getAttribute('class').substr(6).slice(0, -buildBtnLength);
                 var imgClass = town.querySelector('.' + btnClass);
 
                 self.classList.add('is-active');
                 imgClass.style.display = 'block';
 
             } else if (self.classList.contains('is-active') === true) {
-                var btnClass = self.getAttribute('class').substr(8).slice(0, -(10 + buildBtnLength));
+                var btnClass = self.getAttribute('class').substr(6).slice(0, -(10 + buildBtnLength));
                 var imgClass = town.querySelector('.' + btnClass);
 
                 self.classList.remove('is-active');
@@ -30,10 +30,10 @@ function buildTown(town, build) {
     }
 }
 
-buildTown('.b-empire', '.b-build--empire');
-buildTown('.b-undead', '.b-build--undead');
-buildTown('.b-clans', '.b-build--clans');
-buildTown('.b-legions', '.b-build--legions');
+buildTown('.empire', '.build--empire');
+buildTown('.undead', '.build--undead');
+buildTown('.clans', '.build--clans');
+buildTown('.legions', '.build--legions');
 
 function savePicture(race, button) {
     var node = document.querySelector(race);
@@ -52,9 +52,9 @@ function savePicture(race, button) {
     })
 }
 
-savePicture('.b-empire', '.b-btn--save-empire');
-savePicture('.b-undead', '.b-btn--save-undead');
-savePicture('.b-clans', '.b-btn--save-clans');
-savePicture('.b-legions', '.b-btn--save-legions');
+savePicture('.empire', '.btn--save-empire');
+savePicture('.undead', '.btn--save-undead');
+savePicture('.clans', '.btn--save-clans');
+savePicture('.legions', '.btn--save-legions');
 
 

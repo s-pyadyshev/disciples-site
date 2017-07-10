@@ -1,4 +1,4 @@
-.b-clans {
+.legions {
   display: inline-block;
   position: relative;
   width: 640px;
@@ -10,10 +10,10 @@
     top: 0;
     width: 640px;
     height: 600px;
-  }
 
-  &__brewery {
-    z-index: 1;
+    &.legions__town {
+      display: block;
+    }
   }
 
   &__town {
@@ -21,6 +21,3 @@
   }
 }
 
-.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
-  display: block;
-}

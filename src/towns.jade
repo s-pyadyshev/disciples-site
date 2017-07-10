@@ -11,24 +11,24 @@ block head
     - var pageTitle = 'Disciples 2 - Races';
 
 block content
-    .b-container
-        .b-wrapper
+    .container
+        .wrapper
 
-            .b-tab-container
-                a.b-nav-tab.active(href='#empire', data-tab='empire') Empire
-                a.b-nav-tab(href='#undead', data-tab='undead') Undead Hordes
-                a.b-nav-tab(href='#elves', data-tab='elves') Elven Alliance
-                a.b-nav-tab(href='#clans', data-tab='clans') Mountain Clans
-                a.b-nav-tab(href='#legions', data-tab='legions') Legions of the Damned
+            .tab-container
+                a.nav-tab.is-active(href='#empire', data-tab='empire') Empire
+                a.nav-tab(href='#undead', data-tab='undead') Undead Hordes
+                a.nav-tab(href='#elves', data-tab='elves') Elven Alliance
+                a.nav-tab(href='#clans', data-tab='clans') Mountain Clans
+                a.nav-tab(href='#legions', data-tab='legions') Legions of the Damned
 
-            .b-tab-content
-                #empire.b-tab.active
+            .tab-content
+                #empire.tab.is-active
                     +empire-town
-                #undead.b-tab
+                #undead.tab
                     +undead-town
-                #elves.b-tab
+                #elves.tab
                     +elves-town
-                #clans.b-tab
+                #clans.tab
                     +clans-town
-                #legions.b-tab
+                #legions.tab
                     +legions-town

@@ -1,4 +1,4 @@
-.b-empire {
+.empire {
   display: inline-block;
   position: relative;
   width: 640px;
@@ -10,14 +10,14 @@
     top: 0;
     width: 640px;
     height: 600px;
+
+    &.empire__town, 
+    &.empire__walls {
+      display: block;
+    }
   }
 
   &__town {
     z-index: 0;
   }
 }
-
-.b-empire img.b-empire__town, .b-empire img.b-empire__walls {
-  display: block;
-}
-

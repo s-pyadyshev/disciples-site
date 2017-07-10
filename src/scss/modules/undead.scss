@@ -1,4 +1,4 @@
-.b-legions {
+.undead {
   display: inline-block;
   position: relative;
   width: 640px;
@@ -10,13 +10,23 @@
     top: 0;
     width: 640px;
     height: 600px;
+
+    &.undead__town, 
+    &.undead__walls {
+      display: block;
+    }
   }
 
+  &__dragon-cemetery {
+    z-index: 2;
+  }
+  &__evil-monastery {
+    z-index: 1;
+  }
+  &__graveyard {
+    z-index: 1;
+  }
   &__town {
     z-index: 0;
   }
-}
-
-.b-legions img.b-legions__town {
-  display: block;
 }

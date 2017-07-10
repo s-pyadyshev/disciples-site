@@ -1,8 +1,9 @@
-.b-btn {
+.btn {
 
     &--save {
         max-width: 120px;
         padding: 2px 5px;
+        margin-top: 10px;
         text-align: center;
     }
     &--save-town {
@@ -61,20 +62,26 @@
     }
 }
 
-.b-build-container {
+.build-container {
   display: inline-block;
   vertical-align: top;
   position: relative;
   width: 520px;
 }
 
-.b-build {
+.build {
   margin-right: 5px;
   margin-bottom: 3px;
   cursor: pointer;
 
   &:hover span {
     transition-duration: $t-transition-duration;
+  }
+
+  span {
+    padding: 0 5px;
+    border: 1px solid #000;
+    user-select: none;
   }
 
   &--empire {
@@ -131,28 +138,22 @@
     background: $c-legions-bg;
     color: $c-legions-text;
   }
+
+  &__or {
+    margin-right: 5px;
+  }
+
+  &__section {
+    margin-bottom: 5px;
+  }
+
+  &__section-title {
+    display: block;
+    font-weight: 700;
+  }
 }
 
-.b-build span {
-  padding: 0 5px;
-  border: 1px solid #000;
-  user-select: none;
-}
-
-.b-build__or {
-  margin-right: 5px;
-}
-
-.b-build__section {
-  margin-bottom: 5px;
-}
-
-.b-build__section-title {
-  display: block;
-  font-weight: 700;
-}
-
-.b-clans {
+.clans {
   display: inline-block;
   position: relative;
   width: 640px;
@@ -164,6 +165,11 @@
     top: 0;
     width: 640px;
     height: 600px;
+
+    &.clans__town, 
+    &.clans__walls {
+      display: block;
+    }
   }
 
   &__brewery {
@@ -175,15 +181,11 @@
   }
 }
 
-.b-clans img.b-clans__town, .b-clans img.b-clans__walls {
-  display: block;
-}
-
-.b-container {
+.container {
   // display: flex;
   // justify-content: center;
   // align-items: center;
-  // height: 100vh;
+  // height: 100%;
 }
 
 .row {
@@ -195,26 +197,7 @@
   vertical-align: top;
 }
 
-.b-elves {
-  display: inline-block;
-  position: relative;
-  width: 640px;
-  height: 600px;
-}
-
-.b-elves img {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 640px;
-  height: 600px;
-}
-
-.b-elves img.b-elves__town {
-  display: block;
-}
-
-.b-empire {
+.elves {
   display: inline-block;
   position: relative;
   width: 640px;
@@ -226,19 +209,14 @@
     top: 0;
     width: 640px;
     height: 600px;
-  }
 
-  &__town {
-    z-index: 0;
+    &.elves__town {
+      display: block;
+    }
   }
 }
 
-.b-empire img.b-empire__town, .b-empire img.b-empire__walls {
-  display: block;
-}
-
-
-.b-legions {
+.empire {
   display: inline-block;
   position: relative;
   width: 640px;
@@ -250,6 +228,11 @@
     top: 0;
     width: 640px;
     height: 600px;
+
+    &.empire__town, 
+    &.empire__walls {
+      display: block;
+    }
   }
 
   &__town {
@@ -257,78 +240,100 @@
   }
 }
 
-.b-legions img.b-legions__town {
-  display: block;
+.legions {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+
+  img {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 640px;
+    height: 600px;
+
+    &.legions__town {
+      display: block;
+    }
+  }
+
+  &__town {
+    z-index: 0;
+  }
 }
 
-.b-main-menu {
+
+.main-menu {
   position: relative;
   width: 800px;
   height: 600px;
   background: url("../img/main-menu.jpg");
+
+  &__item {
+    height: 52px;
+    margin-bottom: 7px;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    line-height: 50px;
+    text-decoration: none;
+    background: url("../img/main-menu-btn.png");
+    color: #000;
+
+    &:hover {
+      background: url("../img/main-menu-btn-hover.png");
+      background-repeat: no-repeat;
+      text-decoration: none;
+      color: #000;
+    }
+
+    &:active {
+      background: url("../img/main-menu-btn-active.png");
+      background-repeat: no-repeat;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    width: 306px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
 }
 
-.b-main-menu__item {
-  height: 52px;
-  margin-bottom: 7px;
-}
-
-.b-main-menu__link {
-  display: inline-block;
-  width: 100%;
-  height: 52px;
-  line-height: 50px;
-  text-decoration: none;
-  background: url("../img/main-menu-btn.png");
-  color: #000;
-}
-
-.b-main-menu__link:hover {
-  background: url("../img/main-menu-btn-hover.png");
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: #000;
-}
-
-.b-main-menu__link:active {
-  background: url("../img/main-menu-btn-active.png");
-  background-repeat: no-repeat;
-  text-decoration: none;
-  color: #000;
-}
-
-.b-main-menu__list {
-  position: absolute;
-  top: 10px;
-  right: 17px;
-  width: 306px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.b-tab {
-  padding: 20px;
+.tab {
   display: none;
+  padding: 20px;
+  border: 1px solid #000;
+
+  &.is-active {
+    display: block;
+  }
 }
 
-.b-tab.active {
-  display: block;
-}
 
-.b-nav-tab {
+.nav-tab {
   display: inline-block;
   padding: 20px;
+
+  &.is-active {
+    color: #ff4200;
+  }
 }
 
-.b-nav-tab.active {
-  color: #ff4200;
-}
-
-.b-undead {
+.undead {
   display: inline-block;
   position: relative;
   width: 640px;
@@ -340,6 +345,11 @@
     top: 0;
     width: 640px;
     height: 600px;
+
+    &.undead__town, 
+    &.undead__walls {
+      display: block;
+    }
   }
 
   &__dragon-cemetery {
@@ -356,18 +366,14 @@
   }
 }
 
-.b-undead img.b-undead__town, .b-undead img.b-undead__walls {
-  display: block;
-}
-
-.b-wrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 @media only all and (max-width: 767px) {
-  .b-wrapper--town {
+  .wrapper--town {
     flex-direction: column;
     width: 100%;
   }

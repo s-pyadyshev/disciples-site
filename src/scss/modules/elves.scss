@@ -1,0 +1,18 @@
+.elves {
+  display: inline-block;
+  position: relative;
+  width: 640px;
+  height: 600px;
+
+  img {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 640px;
+    height: 600px;
+
+    &.elves__town {
+      display: block;
+    }
+  }
+}

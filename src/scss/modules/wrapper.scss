@@ -1,11 +1,11 @@
-.b-wrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 @media only all and (max-width: 767px) {
-  .b-wrapper--town {
+  .wrapper--town {
     flex-direction: column;
     width: 100%;
   }
