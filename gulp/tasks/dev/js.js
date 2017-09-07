@@ -34,8 +34,8 @@ gulp.task('js-app', config.wrapPipe(function(success, error) {
             basepath: '@file',
             indent: true
         }).on('error', error))
-        .pipe(sourcemaps.init())
-        .pipe(uglify().on('error', error))
+        // .pipe(sourcemaps.init())
+        // .pipe(uglify().on('error', error))
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.js.dest.app))
 }));
