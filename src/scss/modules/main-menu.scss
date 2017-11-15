@@ -1,8 +1,16 @@
 .main-menu {
-  position: relative;
-  width: 800px;
-  height: 600px;
-  background: url("../img/main-menu.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+
+  &__in {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: url("../img/main-menu.jpg");
+  }
 
   &__item {
     height: 52px;

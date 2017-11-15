@@ -1,6 +1,6 @@
-// Mobile First media queries
-$tablet: "only all and (min-width: 768px)";
-$desktop: "only all and (min-width: 1024px)";
+// Standard media queries
+$mobile: "only all and (max-width: 767px)";
+$tablet: "only all and (max-width: 1199px)";
 
 
 // Dimensions
