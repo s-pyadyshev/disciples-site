@@ -3,8 +3,19 @@
   padding: 20px;
   border: 1px solid #000;
 
+  @media #{$mobile} {
+    padding: 10px;
+  }
+
   &.is-active {
     display: block;
+  }
+}
+
+.tab-content {
+
+  @media #{$mobile} {
+    width: 100%;
   }
 }
 

@@ -2,12 +2,22 @@
   display: inline-block;
   vertical-align: top;
   position: relative;
-  width: 520px;
+  max-width: 520px;
+  // width: 100%;
+
+  @media #{$tablet} {
+    margin-bottom: 30px;
+  }
+
+  @media #{$mobile} {
+    font-size: 15px;
+  }
 }
 
 .build {
+  display: table;
   margin-right: 5px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   cursor: pointer;
 
   &:hover span {
@@ -15,7 +25,7 @@
   }
 
   span {
-    padding: 0 5px;
+    padding: 2px 5px;
     border: 1px solid #000;
     user-select: none;
   }
