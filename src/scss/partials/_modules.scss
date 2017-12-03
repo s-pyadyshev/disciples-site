@@ -66,7 +66,7 @@
   display: inline-block;
   vertical-align: top;
   position: relative;
-  max-width: 520px;
+  max-width: 550px;
   // width: 100%;
 
   @media #{$tablet} {
@@ -150,6 +150,7 @@
   }
 
   &__or {
+    font-weight: 700;
     margin-right: 5px;
   }
 

@@ -6,20 +6,13 @@ html(lang='en')
         meta(name="author" content="")
         meta(name="copyright" content="")
         meta(name='viewport' content='width=device-width, initial-scale=1')
-        //- Индикатор того, что на странице использована разметка оптимизированная для мобильных устройств. Просит документ отображаться без автоматического масштабирования.
         meta(name="HandheldFriendly" content="True")
-        //- Запуск последнего режима ie, запуск Google Chrome frame (при наличии)
         meta(http-equiv='X-UA-Compatible' content='IE=edge')
-        //- Применение технологии ClearType в ie для сглаживания шрифтов
         meta(http-equiv="cleartype" content="on")
-        //- цвет темы для мобильного chrome
-        //- meta(name="theme-color", content="#ffffff")
+        meta(name="theme-color", content="#ffffff")
 
         block styles
             link(href='css/main.css' rel='stylesheet')
-        block scripts-head
-            script(src="js/dom-to-image.min.js")
-            script(src="js/FileSaver.min.js")
         block head
         title= pageTitle || ''
         meta(name='description' content=pageDescription || '')

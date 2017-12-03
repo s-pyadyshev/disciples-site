@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
+    gcmq = require('gulp-group-css-media-queries');
     config = require('../../config');
 
 gulp.task('scss', ['style-modules'], config.wrapPipe(function(success, error) {
@@ -9,6 +10,8 @@ gulp.task('scss', ['style-modules'], config.wrapPipe(function(success, error) {
         .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
         // .pipe(sourcemaps.write())
         .pipe($.autoprefixer())
+        .pipe(gcmq())
+        .pipe($.csso())
         .pipe(gulp.dest(config.scss.dest))
 }));
 
