@@ -1,5 +1,8 @@
 'use strict';
 
+@@include('dom-to-image.min.js');
+@@include('FileSaver.min.js');
+
 function Tabs() {
   var bindAll = function() {
     var menuElements = document.querySelectorAll('[data-tab]');
