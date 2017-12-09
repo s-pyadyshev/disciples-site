@@ -1,6 +1,6 @@
 'use strict';
 
-import * as townBuilder from './town-builder';
+import * as townBuilder from './modules/town-builder';
 import * as imageSaver from './image-saver';
 
 townBuilder.buildTown('.empire', '.build--empire');
@@ -12,7 +12,3 @@ imageSaver.saveImage('.empire', '.btn--save-empire');
 imageSaver.saveImage('.undead', '.btn--save-undead');
 imageSaver.saveImage('.clans', '.btn--save-clans');
 imageSaver.saveImage('.legions', '.btn--save-legions');
-
-
-
-

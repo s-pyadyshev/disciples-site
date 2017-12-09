@@ -1,4 +1,3 @@
-
 export const buildTown = (town, build) => {
     var town = document.querySelector(town); // container of images
     var buildBtns = document.querySelectorAll(build); // all build buttons for certain race
