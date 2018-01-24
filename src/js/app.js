@@ -1,18 +1,14 @@
 'use strict';
 
-import * as townBuilder from './town-builder';
-import * as imageSaver from './image-saver';
+import { default as nameOfDefault } from './modules/town-builder';
+import * as imageSaver from './modules/image-saver';
 
-townBuilder.buildTown('.empire', '.build--empire');
-townBuilder.buildTown('.undead', '.build--undead');
-townBuilder.buildTown('.clans', '.build--clans');
-townBuilder.buildTown('.legions', '.build--legions');
+nameOfDefault('.empire', '.build--empire');
+nameOfDefault('.undead', '.build--undead');
+nameOfDefault('.clans', '.build--clans');
+nameOfDefault('.legions', '.build--legions');
 
 imageSaver.saveImage('.empire', '.btn--save-empire');
 imageSaver.saveImage('.undead', '.btn--save-undead');
 imageSaver.saveImage('.clans', '.btn--save-clans');
 imageSaver.saveImage('.legions', '.btn--save-legions');
-
-
-
-
