@@ -30,4 +30,10 @@ export const buildTown = (town, build) => {
     };
 };
 
+export const townName = "Empire";
+
+export const thiefYell = (phrase) => {
+    console.log(phrase);
+}
+
 export default buildTown
