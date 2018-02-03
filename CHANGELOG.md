@@ -5,6 +5,7 @@
 ### Added
 
 - CHANGELOG and README
+- Lazy loading
 
 ## 0.4 (2017)
 

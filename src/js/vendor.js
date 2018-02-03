@@ -2,6 +2,7 @@
 
 @@include('dom-to-image.min.js');
 @@include('FileSaver.min.js');
+@@include('lazysizes.min.js');
 
 function Tabs() {
   var bindAll = function() {
