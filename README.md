@@ -7,7 +7,7 @@ It is recreation of some screens and features from the game Disciples II: Rise o
 Technologies: Pug, SCSS, Gulp, JS, ES6, [FileSaver.js](https://github.com/eligrey/FileSaver.js), [dom-to-image](https://github.com/tsayen/dom-to-image), [lazysizes](https://github.com/aFarkas/lazysizes)
 
 # TODO
-<s>- Add lazy loading</s>
+- <s>Add lazy loading</s>
 - Add more styling to buttons, links, sections, etc.
 - Fix boilerplate JS task
 - Add active button image
