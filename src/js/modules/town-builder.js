@@ -2,6 +2,7 @@ export const buildTown = (town, build) => {
     var town = document.querySelector(town); // container of images
     var buildBtns = document.querySelectorAll(build); // all build buttons for certain race
     var buildBtnLength = build.length;
+    var buildClassLength = 6;
 
     var buildBtnArray = [];
 
@@ -13,14 +14,14 @@ export const buildTown = (town, build) => {
             var self = this;
 
             if (self.classList.contains('is-active') === false) {
-                var btnClass = self.getAttribute('class').substr(6).slice(0, -buildBtnLength);
+                var btnClass = self.getAttribute('class').substr(buildClassLength).slice(0, -buildBtnLength);
                 var imgClass = town.querySelector('.' + btnClass);
 
                 self.classList.add('is-active');
                 imgClass.style.display = 'block';
 
             } else if (self.classList.contains('is-active') === true) {
-                var btnClass = self.getAttribute('class').substr(6).slice(0, -(10 + buildBtnLength));
+                var btnClass = self.getAttribute('class').substr(buildClassLength).slice(0, -(10 + buildBtnLength));
                 var imgClass = town.querySelector('.' + btnClass);
 
                 self.classList.remove('is-active');

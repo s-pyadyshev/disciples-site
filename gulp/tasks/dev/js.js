@@ -46,15 +46,9 @@ gulp.task('js-app', config.wrapPipe(function(success, error) {
             indent: true
         }).on('error', error))
         // .pipe(sourcemaps.init())
-        .pipe(uglify().on('error', error))
+        // .pipe(uglify().on('error', error))
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.js.dest.app))
-}));
-
-// Copy jQuery
-gulp.task('copy-jquery', config.wrapPipe(function(success, error) {
-    return gulp.src('src/js/jquery/*.js')
-        .pipe(gulp.dest('build/js'))
 }));
 
 gulp.task('browserify', function () {
@@ -63,7 +57,7 @@ gulp.task('browserify', function () {
   ];
   var tasks = files.map(function (entry) {
     return browserify({
-      entries: ['build/js/' + entry],
+      entries: ['src/js/' + entry],
       debug: true
     })
       .transform(babel)
@@ -73,7 +67,7 @@ gulp.task('browserify', function () {
         message: "<%= error.message %>"
       }))
       .pipe(vinylSourceStream(entry))
-      .pipe(gulp.dest('build/js'))
+      .pipe(gulp.dest('js/'))
   });
   return es.merge.apply(null, tasks);
 });
