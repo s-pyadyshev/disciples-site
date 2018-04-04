@@ -8,6 +8,7 @@ Technologies: Pug, SCSS, Gulp, JS, ES6, [FileSaver.js](https://github.com/eligre
 
 # TODO
 <s>- Add lazy loading</s>
+- Add music player
 - Add more styling to buttons, links, sections, etc.
 - Fix boilerplate JS task
 - Add active button image
