@@ -1,4 +1,8 @@
 # disciples-site
+[GitHub Page](https://s-pyadyshev.github.io/disciples-site)
+<img width=50% src="https://s-pyadyshev.github.io/disciples-site/screen1.jpg">
+<img width=50% src="https://s-pyadyshev.github.io/disciples-site/screen1.jpg">
+
 It is recreation of some screens and features from the game Disciples II: Rise of the Elves
 
 - Main screen (hover buttons)
@@ -13,5 +17,3 @@ Technologies: Pug, SCSS, Gulp, JS, ES6, [FileSaver.js](https://github.com/eligre
 - Fix boilerplate JS task
 - Add active button image
 - Make/add elves town building images
-
-[GitHub Page](https://s-pyadyshev.github.io/disciples-site)
