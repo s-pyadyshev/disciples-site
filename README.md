@@ -1,7 +1,6 @@
 # disciples-site
 [GitHub Page](https://s-pyadyshev.github.io/disciples-site)
-<img width=50% src="https://s-pyadyshev.github.io/disciples-site/screen1.jpg">
-<img width=50% src="https://s-pyadyshev.github.io/disciples-site/screen1.jpg">
+<img width=100% src="https://raw.githubusercontent.com/s-pyadyshev/disciples-site/master/screen2.jpg">
 
 It is recreation of some screens and features from the game Disciples II: Rise of the Elves
 
