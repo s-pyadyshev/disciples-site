@@ -10,9 +10,10 @@ It is recreation of some screens and features from the game Disciples II: Rise o
 Technologies: Pug, SCSS, Gulp, JS, [FileSaver.js](https://github.com/eligrey/FileSaver.js), [dom-to-image](https://github.com/tsayen/dom-to-image), [lazysizes](https://github.com/aFarkas/lazysizes)
 
 # TODO
-<s>- Add lazy loading</s>
+- Fix save image feature for safari
 - Add music player
 - Add more styling to buttons, links, sections, etc.
 - Fix boilerplate JS task
 - Add active button image
 - Make/add elves town building images
+<s>- Add lazy loading</s>
