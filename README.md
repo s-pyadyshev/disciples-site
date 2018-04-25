@@ -16,4 +16,4 @@ Technologies: Pug, SCSS, Gulp, JS, [FileSaver.js](https://github.com/eligrey/Fil
 - Fix boilerplate JS task
 - Add active button image
 - Make/add elves town building images
-<s>- Add lazy loading</s>
+- <s>- Add lazy loading</s>
