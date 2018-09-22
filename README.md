@@ -12,9 +12,10 @@ Technologies: Pug, SCSS, Gulp, JS, [FileSaver.js](https://github.com/eligrey/Fil
 What is the reason to do this stuff??? Disciples is awesome, no objections.
 
 # TODO
+- Refactoring
 - Fix save image feature
-- Add music player
 - Add more styling to buttons, links, sections, etc.
+- Add music player
 - Fix bug when button image jumps on 1st hover
 - Make/add elves town building images
 <s>- Add lazy loading</s>
