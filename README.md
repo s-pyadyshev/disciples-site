@@ -9,11 +9,14 @@ It is recreation of some screens and features from the game Disciples II: Rise o
 
 Technologies: Pug, SCSS, Gulp, JS, [FileSaver.js](https://github.com/eligrey/FileSaver.js), [dom-to-image](https://github.com/tsayen/dom-to-image), [lazysizes](https://github.com/aFarkas/lazysizes)
 
+What is the reason to do this stuff??? Disciples is awesome, no objections.
+
 # TODO
-- Fix save image feature for safari
+- Fix save image feature
 - Add music player
 - Add more styling to buttons, links, sections, etc.
-- Fix boilerplate JS task
-- Add active button image
+- Fix bug when button image jumps on 1st hover
 - Make/add elves town building images
 <s>- Add lazy loading</s>
+<s>- Add active button image</s>
+<s>- Fix boilerplate JS task</s>

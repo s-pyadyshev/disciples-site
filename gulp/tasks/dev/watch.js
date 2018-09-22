@@ -17,7 +17,7 @@ gulp.task('scss-watch', ['scss'], function (done) {
     done();
 });
 
-gulp.task('js-watch', ['browserify'], function (done) {
+gulp.task('js-watch', ['js'], function (done) {
     browserSync.reload();
     done();
 });

@@ -10,36 +10,11 @@ var sourcemaps = require('gulp-sourcemaps');
 var vinylSourceStream = require('vinyl-source-stream');
 var es = require('event-stream');
 
-gulp.task('js', ['js-vendor', 'js-app', 'copy-jquery']);
+gulp.task('js');
 
 // Vendor scripts
 gulp.task('js-vendor', config.wrapPipe(function(success, error) {
-
     return gulp.src(config.js.src.vendor)
-        .pipe(fileinclude({
-            prefix: '@@',
-            basepath: '@file',
-            indent: true
-        }).on('error', error))
-        .pipe(gulp.dest(config.js.dest.vendor))
-}));
-
-// Scripts for legacy browsers
-gulp.task('js-legacy', config.wrapPipe(function(success, error) {
-
-    return gulp.src(config.jsLegacy.src)
-        .pipe(fileinclude({
-            prefix: '@@',
-            basepath: '@file',
-            indent: true
-        }).on('error', error))
-        .pipe(gulp.dest(config.jsLegacy.dest))
-}));
-
-// User scripts
-gulp.task('js-app', config.wrapPipe(function(success, error) {
-
-    return gulp.src(config.js.src.app)
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file',
@@ -48,10 +23,10 @@ gulp.task('js-app', config.wrapPipe(function(success, error) {
         // .pipe(sourcemaps.init())
         // .pipe(uglify().on('error', error))
         // .pipe(sourcemaps.write())
-        .pipe(gulp.dest(config.js.dest.app))
+        .pipe(gulp.dest(config.js.dest.vendor))
 }));
 
-gulp.task('browserify', function () {
+gulp.task('js', function () {
   var files = [
     'app.js'
   ];
@@ -67,21 +42,14 @@ gulp.task('browserify', function () {
         message: "<%= error.message %>"
       }))
       .pipe(vinylSourceStream(entry))
-      .pipe(gulp.dest('js/'))
+      .pipe(gulp.dest('js'))
   });
   return es.merge.apply(null, tasks);
 });
 
-gulp.task('js-lint', () => {
-  return gulp.src('build/js/app.js')
-    .pipe($.eslint())
-    .pipe($.eslint.format())
-    .pipe($.eslint.failAfterError());
-});
+// gulp.task('js-uglify', config.wrapPipe(function(success, error) {
 
-gulp.task('js-uglify', config.wrapPipe(function(success, error) {
-
-    return gulp.src('js/app.js')
-        .pipe(uglify().on('error', error))
-        .pipe(gulp.dest('js/app.min.js'))
-}));
+//     return gulp.src('js/app.js')
+//         .pipe(uglify().on('error', error))
+//         .pipe(gulp.dest('js/app.min.js'))
+// }));
