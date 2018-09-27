@@ -18,6 +18,6 @@ What is the reason to do this stuff??? Disciples is awesome, no objections.
 - Add music player
 - Fix bug when button image jumps on 1st hover
 - Make/add elves town building images
-<s>- Add lazy loading</s>
-<s>- Add active button image</s>
-<s>- Fix boilerplate JS task</s>
+- <s>- Add lazy loading</s>
+- <s>- Add active button image</s>
+- <s>- Fix boilerplate JS task</s>
