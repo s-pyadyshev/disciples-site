@@ -1,4 +1,5 @@
-export const toggleByClass = (buttons, buildBtnLength, buildClassLength, town) => {
+export const toggleByClass = (buttons, buildBtnLength, town) => {
+    const buildClassLength = 6;
 
     buttons.forEach((item, index) => {
         buttons[index].addEventListener('click', function() {
