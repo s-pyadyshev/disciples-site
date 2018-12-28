@@ -1,7 +1,91 @@
 mixin elves-town
-    .build-container.build-container--elves Building images of other towns were made as 640x600 transparent PNG with certain position of building, but developers didn't care about Elves and did their images without this PNG background
-        .btn.btn--save.btn--save-elves Save Picture
+    .build-container.build-container--elves Building images of other towns were made as 640x600 transparent PNG with certain position of building, but Elves were made without this PNG background
+        .build__section
+            span.build__section-title Other Buildings
+            .row
+                .build.elves__guild.build--elves
+                    span Guild
+                .build.elves__magic-tower.build--elves
+                    span Magic Tower
+                .build.elves__temple.build--elves
+                    span Temple
+        .build__section
+            span.build__section-title Fighter Units
+            .col
+                .row
+                    .build.elves__centaur-hollow.build--elves
+                        span Centaur Hollow
+                    span.build__or OR
+                .row
+                    .build.elves__tribal-ground.build--elves
+                        span Tribal Ground
+            .col
+                .row
+                    .build.elves__centaur-stables.build--elves
+                        span Centaur Stables
 
+        //- Cupola -> Elementarium or High Council
+        //- Aviary 
+        //- Volary
+
+        //- Skinner's Hutch or Lookout -> Pyromantium or Hydromantium
+        //- Hovel or Lodge
+        //- Hideout
+        //- Harborage
+
+        //- Spriggan Circle
+        //- Thicket
+        //- Firegrounds or Gallean's Altar
+        .build__section
+            span.build__section-title Mage Units
+            .col
+                .build.elves__library.build--elves
+                    span Cupola
+                .build.elves__library.build--elves
+                    span Aviary
+                .build.elves__library.build--elves
+                    span Volary
+            .col
+                .row
+                    .build.elves__tower.build--elves
+                        span Elementarium
+                    span.build__or OR
+                    .build.elves__elemental-circle.build--elves
+                        span High Council
+
+        .build__section
+            span.build__section-title Ranged Attack Units
+            .build.elves__hydromantium.build--elves
+                span Hydromantium
+            .build.elves__imperial-guild.build--elves
+                span Imperial Guild
+        .build__section
+            span.build__section-title Support Units
+            .col
+                .build.elves__monastery.build--elves
+                    span Monastery
+                .build.elves__sanctuary.build--elves
+                    span Sanctuary
+                .build.elves__worship-house.build--elves
+                    span Worship House
+            span.build__or OR
+            .col
+                .build.elves__church.build--elves
+                    span Church
+                .build.elves__cathedral.build--elves
+                    span Cathedral
+                .build.elves__basilica.build--elves
+                    span Basilica
+        .build__section
+            span.build__section-title Background
+            .row
+                .build.elves__flag-left.build--elves
+                    span Left Flag
+                .build.elves__flag-right.build--elves
+                    span Right Flag
+
+        .btn.btn--save.btn--save-elves Save Picture
     .elves
-        img.lazyload.elves__town(data-src='img/elven-alliance/elves-town.png', alt='', title='')
+        img.lazyload.elves__town(data-src='img/elven-alliance/elves-town.png' alt='' title='')
+        img.lazyload.elves__hydromantium(data-src='img/elven-alliance/elves-hydromantium.gif' alt='' title='')
 

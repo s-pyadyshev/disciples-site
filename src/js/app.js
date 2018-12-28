@@ -7,8 +7,10 @@ buildTown('.empire', '.build--empire');
 buildTown('.undead', '.build--undead');
 buildTown('.clans', '.build--clans');
 buildTown('.legions', '.build--legions');
+buildTown('.elves', '.build--elves');
 
 imageSaver.saveImage('.empire', '.btn--save-empire');
 imageSaver.saveImage('.undead', '.btn--save-undead');
 imageSaver.saveImage('.clans', '.btn--save-clans');
 imageSaver.saveImage('.legions', '.btn--save-legions');
+imageSaver.saveImage('.elves', '.btn--save-elves');

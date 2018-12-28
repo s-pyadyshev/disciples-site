@@ -82,6 +82,7 @@
   margin-right: 5px;
   margin-bottom: 5px;
   cursor: pointer;
+  transition-duration: $t-transition-duration;
 
   &:hover span {
     transition-duration: $t-transition-duration;
@@ -146,6 +147,11 @@
   &--legions.is-active span {
     background: $c-legions-bg;
     color: $c-legions-text;
+  }
+
+  &--elves.is-active span {
+    background: $c-elves-bg;
+    color: $c-elves-text;
   }
 
   &__or {
