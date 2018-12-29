@@ -23,71 +23,91 @@ mixin elves-town
                 .row
                     .build.elves__centaur-stables.build--elves
                         span Centaur Stables
-
-        //- Cupola -> Elementarium or High Council
-        //- Aviary 
-        //- Volary
-
-        //- Skinner's Hutch or Lookout -> Pyromantium or Hydromantium
-        //- Hovel or Lodge
-        //- Hideout
-        //- Harborage
-
-        //- Spriggan Circle
-        //- Thicket
-        //- Firegrounds or Gallean's Altar
         .build__section
             span.build__section-title Mage Units
+            .build.elves__cupola.build--elves
+                span Cupola
             .col
-                .build.elves__cupola.build--elves
-                    span Cupola
-                .build.elves__library.build--elves
+                .build.elves__aviary.build--elves
                     span Aviary
-                .build.elves__library.build--elves
+                .build.elves__volary.build--elves
                     span Volary
             .col
                 .row
-                    .build.elves__tower.build--elves
+                    br
+                    .build.elves__elementarium.build--elves
                         span Elementarium
                     span.build__or OR
-                    .build.elves__elemental-circle.build--elves
+                    .build.elves__high-council.build--elves
                         span High Council
 
         .build__section
             span.build__section-title Ranged Attack Units
-            .build.elves__hydromantium.build--elves
-                span Hydromantium
-            .build.elves__imperial-guild.build--elves
-                span Imperial Guild
+            .col
+                .row
+                    .build.elves__skinners-hutch.build--elves
+                        span Skinner's Hutch
+                .row
+                    .build.elves__hovel.build--elves
+                        span Hovel
+                    span.build__or OR
+                    .build.elves__lodge.build--elves
+                        span Lodge
+                .row
+                    .build.elves__hideout.build--elves
+                        span Hideout
+                .row
+                    .build.elves__harborage.build--elves
+                        span Harborage
+            span.build__or OR
+            .col
+                .row
+                    .build.elves__lookout.build--elves
+                        span Lookout
+                .row
+                    .build.elves__pyromantium.build--elves
+                        span Pyromantium
+                    span.build__or OR
+                    .build.elves__hydromantium.build--elves
+                        span Hydromantium
+                
         .build__section
             span.build__section-title Support Units
             .col
                 .build.elves__spriggan-circle.build--elves
                     span Spriggan Circle
-                .build.elves__galleans-altar.build--elves
-                    span Gallean's Altar
-                .build.elves__worship-house.build--elves
-                    span Worship House
-            span.build__or OR
-            .col
-                .build.elves__church.build--elves
-                    span Church
-                .build.elves__cathedral.build--elves
-                    span Cathedral
-                .build.elves__basilica.build--elves
-                    span Basilica
-        .build__section
-            span.build__section-title Background
-            .row
-                .build.elves__flag-left.build--elves
-                    span Left Flag
-                .build.elves__flag-right.build--elves
-                    span Right Flag
+                .build.elves__thicket.build--elves
+                    span Thicket
+                .row
+                    .build.elves__firegrounds.build--elves
+                        span Firegrounds
+                    span.build__or OR
+                    .build.elves__galleans-altar.build--elves
+                        span Gallean's Altar
 
         .btn.btn--save.btn--save-elves Save Picture
     .elves
         img.lazyload.elves__town(data-src='img/elven-alliance/elves-town.png' alt='' title='')
+        img.lazyload.elves__guild(data-src='img/elven-alliance/elves-guild.gif' alt='' title='')
+        img.lazyload.elves__magic-tower(data-src='img/elven-alliance/elves-magic-tower.gif' alt='' title='')
+        img.lazyload.elves__temple(data-src='img/elven-alliance/elves-temple.gif' alt='' title='')
+        img.lazyload.elves__centaur-hollow(data-src='img/elven-alliance/elves-centaur-hollow.gif' alt='' title='')
+        img.lazyload.elves__tribal-ground(data-src='img/elven-alliance/elves-tribal-ground.gif' alt='' title='')
+        img.lazyload.elves__centaur-stables(data-src='img/elven-alliance/elves-centaur-stables.gif' alt='' title='')
         img.lazyload.elves__cupola(data-src='img/elven-alliance/elves-cupola.gif' alt='' title='')
+        img.lazyload.elves__aviary(data-src='img/elven-alliance/elves-aviary.gif' alt='' title='')
+        img.lazyload.elves__volary(data-src='img/elven-alliance/elves-volary.gif' alt='' title='')
+        img.lazyload.elves__elementarium(data-src='img/elven-alliance/elves-elementarium.gif' alt='' title='')
+        img.lazyload.elves__high-council(data-src='img/elven-alliance/elves-high-council.gif' alt='' title='')
+        img.lazyload.elves__skinners-hutch(data-src='img/elven-alliance/elves-skinners-hutch.gif' alt='' title='')
+        img.lazyload.elves__hovel(data-src='img/elven-alliance/elves-hovel.gif' alt='' title='')
+        img.lazyload.elves__lodge(data-src='img/elven-alliance/elves-lodge.gif' alt='' title='')
+        img.lazyload.elves__hideout(data-src='img/elven-alliance/elves-hideout.gif' alt='' title='')
+        img.lazyload.elves__harborage(data-src='img/elven-alliance/elves-harborage.gif' alt='' title='')
+        img.lazyload.elves__lookout(data-src='img/elven-alliance/elves-lookout.gif' alt='' title='')
+        img.lazyload.elves__pyromantium(data-src='img/elven-alliance/elves-pyromantium.gif' alt='' title='')
         img.lazyload.elves__hydromantium(data-src='img/elven-alliance/elves-hydromantium.gif' alt='' title='')
         img.lazyload.elves__spriggan-circle(data-src='img/elven-alliance/elves-spriggan-circle.gif' alt='' title='')
+        img.lazyload.elves__thicket(data-src='img/elven-alliance/elves-thicket.gif' alt='' title='')
+        img.lazyload.elves__firegrounds(data-src='img/elven-alliance/elves-firegrounds.gif' alt='' title='')
         img.lazyload.elves__galleans-altar(data-src='img/elven-alliance/elves-galleans-altar.gif' alt='' title='')
