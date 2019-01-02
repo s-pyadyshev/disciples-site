@@ -66,27 +66,27 @@
   }
 
   &--clans.is-active span {
-    background: $c-clans-bg;
+    background-color: $c-clans-bg;
     color: $c-clans-text;
   }
 
   &--empire.is-active span {
-    background: $c-empire-bg;
+    background-color: $c-empire-bg;
     color: $c-empire-text;
   }
 
   &--undead.is-active span {
-    background: $c-undead-bg;
+    background-color: $c-undead-bg;
     color: $c-undead-text;
   }
 
   &--legions.is-active span {
-    background: $c-legions-bg;
+    background-color: $c-legions-bg;
     color: $c-legions-text;
   }
 
   &--elves.is-active span {
-    background: $c-elves-bg;
+    background-color: $c-elves-bg;
     color: $c-elves-text;
   }
 
