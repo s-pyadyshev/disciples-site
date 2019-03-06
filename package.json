@@ -25,7 +25,7 @@
     "type": "git",
     "url": ""
   },
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^6.3.6",
     "babel": "^6.5.2",
     "babel-core": "^6.26.3",
@@ -36,6 +36,7 @@
     "bluebird": "^3.1.1",
     "browser-sync": "^2.13.0",
     "browserify": "^14.5.0",
+    "dom-to-image": "^2.6.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^7.0.1",
@@ -59,7 +60,7 @@
     "gulp-inject": "^4.2.0",
     "gulp-jade": "^1.1.0",
     "gulp-jade-inheritance": "^0.5.5",
-    "gulp-load-plugins": "^1.4.0",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-newer": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-postcss": "^6.1.1",
@@ -82,13 +83,10 @@
     "postcss-flexibility": "^1.0.3",
     "postcss-object-fit-images": "^1.1.2",
     "postcss-unprefix": "^0.2.2",
-    "require-dir": "^0.3.0",
+    "require-dir": "^0.3.2",
     "svg4everybody": "^2.1.4",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^1.1.2",
     "vinyl-transform": "^1.0.0"
-  },
-  "dependencies": {
-    "vinyl-buffer": "^1.0.1"
   }
 }
