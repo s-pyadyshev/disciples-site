@@ -1,0 +1,69 @@
+.btn {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--save {
+    margin-top: 10px;
+    padding: 2px 5px;
+    max-width: 120px;
+    text-align: center;
+  }
+
+  &--save-town {
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    cursor: pointer;
+  }
+
+  &--save-empire {
+    border: 2px solid $empire-color;
+
+    &:hover,
+    &:active {
+      color: $btn-text-hover;
+      background-color: $empire-color;
+    }
+  }
+
+  &--save-undead {
+    border: 2px solid $undead-color;
+
+    &:hover,
+    &:active {
+      color: $btn-text-hover;
+      background-color: $undead-color;
+    }
+  }
+
+  &--save-elves {
+    border: 2px solid $elves-color;
+
+    &:hover,
+    &:active {
+      color: $btn-text-hover;
+      background-color: $elves-color;
+    }
+  }
+
+  &--save-clans {
+    border: 2px solid $clans-color;
+
+    &:hover,
+    &:active {
+      color: $btn-text-hover;
+      background-color: $clans-color;
+    }
+  }
+
+  &--save-legions {
+    border: 2px solid $legions-color;
+
+    &:hover,
+    &:active {
+      color: $btn-text-hover;
+      background-color: $legions-color;
+    }
+  }
+}

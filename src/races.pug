@@ -1,0 +1,26 @@
+extends pug/base
+
+append vars
+  - var title = "Disciples 2 - Races";
+
+block content
+  .container
+    .wrapper
+      .tab-container
+        button.nav-tab.nav-tab--empire.is-active(data-tab="empire") Empire
+        button.nav-tab.nav-tab--undead(data-tab="undead") Undead Hordes
+        button.nav-tab.nav-tab--elves(data-tab="elves") Elven Alliance
+        button.nav-tab.nav-tab--clans(data-tab="clans") Mountain Clans
+        button.nav-tab.nav-tab--legions(data-tab="legions") Legions of the Damned
+
+      .tab-content
+        .tab.is-active#empire
+          include ./pug/empire
+        .tab#undead
+          include ./pug/undead
+        .tab#elves
+          include ./pug/elves
+        .tab#clans
+          include ./pug/clans
+        .tab#legions
+          include ./pug/legions

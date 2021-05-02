@@ -1,34 +1,14 @@
-'use strict';
+// import "@babel/polyfill";
+// import svg4everybody from "svg4everybody";
+// import $ from "jquery";
 
-@@include('dom-to-image.min.js');
-@@include('FileSaver.min.js');
-@@include('lazysizes.min.js');
+// svg4everybody();
 
-const Tabs = () => {
-  const bindAll() {
-    const menuElements = document.querySelectorAll('[data-tab]');
-    for (let i = 0; i < menuElements.length ; i++) {
-      menuElements[i].addEventListener('click', change, false);
-    }
-  }
+// window.$ = $;
+// window.jQuery = $;
 
-  const clear() {
-    const menuElements = document.querySelectorAll('[data-tab]');
-    for (let i = 0; i < menuElements.length ; i++) {
-      menuElements[i].classList.remove('is-active');
-      const id = menuElements[i].getAttribute('data-tab');
-      document.getElementById(id).classList.remove('is-active');
-    }
-  }
+// require("ninelines-ua-parser");
 
-  const change(event) {
-    clear();
-    event.target.classList.add('is-active');
-    const id = event.currentTarget.getAttribute('data-tab');
-    document.getElementById(id).classList.add('is-active');
-  }
-
-  bindAll();
-}
-
-const connectTabs = new Tabs();
+// import "./vendor/dom-to-image.min.js";
+// import "./vendor/file-saver.min.js";
+// import "./vendor/lazysizes.min.js";

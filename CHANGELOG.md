@@ -1,17 +1,29 @@
 # Changelog
 
+## 0.7 (2021)
+
+### Added
+
+- Moved to new boilerplate
+
+## 0.6 (2019)
+
+### Added
+
+- Elves town
+
 ## 0.5 (2018)
 
 ### Added
 
 - CHANGELOG and README
-- Lazy loading
+- Lazy loading for images
 
 ## 0.4 (2017)
 
 ### Added
 
-- Code refactoring, ES6 imports, CSS and JS minification
+- Code refactoring to ES6
 
 ## 0.3 (2017)
 
@@ -30,6 +42,3 @@
 ### Added
 
 - HTML + CSS version
-
-
-

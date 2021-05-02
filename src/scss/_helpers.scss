@@ -1,0 +1,37 @@
+.is-hidden {
+  // stylelint-disable-next-line declaration-no-important
+  display: none !important;
+}
+
+.for-desktop {
+  @include mobile {
+    // stylelint-disable-next-line declaration-no-important
+    display: none !important;
+  }
+}
+
+.for-mobile {
+  @include desktop {
+    // stylelint-disable-next-line declaration-no-important
+    display: none !important;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}

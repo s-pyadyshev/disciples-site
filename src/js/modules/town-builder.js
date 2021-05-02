@@ -1,20 +1,23 @@
-import toggleByClass from './toggleByClass';
+import toggleByClass from "./toggleByClass";
 
 export const buildTown = (town, build) => {
-    var town = document.querySelector(town);
-    const buildBtnLength = build.length;
+  const townElement = document.querySelector(town);
+  const buildBtnLength = build.length;
 
-    const getBuildButtons = () => {
-        const buildBtns = document.querySelectorAll(build);
-        let buildBtnArray = [];
+  const getBuildButtons = () => {
+    const buildBtns = document.querySelectorAll(build);
+    let buildBtnArray = [];
 
-        for (let i = buildBtns.length; i--; buildBtnArray.unshift(buildBtns[i]));
-        return buildBtnArray;
+    for (let i = buildBtns.length; i--; buildBtnArray.unshift(buildBtns[i])) {
+      return buildBtnArray;
     }
 
-    const buildButtons = getBuildButtons();
+    return buildBtnArray;
+  };
 
-    toggleByClass(buildButtons, buildBtnLength, town);
+  const buildButtons = getBuildButtons();
+
+  toggleByClass(buildButtons, buildBtnLength, townElement);
 };
 
 export default buildTown;

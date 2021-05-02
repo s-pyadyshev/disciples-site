@@ -1,18 +1,17 @@
-export const saveImage = (race, button) => {
-    var node = document.querySelector(race);
-    
-    document.querySelector(button).addEventListener("click", function() {
-        domtoimage.toPng(node)
-        .then(function (dataUrl) {
-            const link = document.createElement("a");
-            link.download = "disciples.jpeg";
-            link.href = dataUrl;
-            link.click();
-        })
-        .catch(function (error) {
-            console.error("oops, something went wrong!", error);
-        });
-    })
+import * as htmlToImage from "html-to-image";
+
+export const saveImage = (selector, buttonClass) => {
+  const node = document.querySelector(selector);
+  const button = document.querySelector(buttonClass);
+
+  button.addEventListener("click", () => {
+    htmlToImage.toJpeg(node, { quality: 0.95 }).then((dataUrl) => {
+      const link = document.createElement("a");
+      link.download = "disciples-2.jpeg";
+      link.href = dataUrl;
+      link.click();
+    });
+  });
 };
 
 export default saveImage;

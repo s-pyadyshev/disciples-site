@@ -1,96 +1,17 @@
-﻿/phpinfo.php
-
-# файлы создаваемые редакторами
-*.bak
-*.orig
-*.sublime-grunt.cache
-*.sublime-gulp.cache
-*.sublime-project
-*.sublime-workspace
-._*
-.cache
-.idea
-.project
-.settings
-.tmproj
-
-# файлы системы
+*.log
 .DS_Store
-Thumbs.db
-
-# папки Bitrix
-/upload/*
-/bitrix/*
-/logs
-
-# файлы шаблона
-/local/templates/*/js/*
-/local/templates/*/css/*
-/local/templates/*/img/*
-/local/templates/*/fonts/*
-/html/build/*
-
-# Numerous always-ignore extensions
-*.bak
-*.diff
-*.err
-*.exe
-*.log
-*.orig
-*.rej
-*.sass-cache
-*.swo
-*.swp
-*.vi
-*~
-
-# текстовые и прочие файлы в том числе файлы бд
-*.xml
-*.txt
-*.dt
-*.psd
-*.pdf
-*.log
-*.sql
-!/backups/*.sql
-
-# архивы
-*.tar.gz
-*.tar
-*.zip
-*.7z
-*.cab
-*.exe
-*.rar
-*.pak
-*.zipx
-
-# исключения для composer
-composer.phar
-composer.lock
-/local/php_interface/include/vendor/*
-
-# Резервная копия оригинального файла
-*.orig
-
-# Файлы офиса
-*.doc
-*.doxc
-*.xls
-*.xlsx
-*.ppt
-*.pttx
-
-#Bower and npm
-bower_components/
+.idea/
+.settings/
+.vscode/
 node_modules/
-npm-debug.log
-
-#CVS
-.CVS
-.git
-.hg
-.idea
-.svn
-
-templates/
+bower_components/
+dist/
+build/
+zip/
+aero-debug.log
+aero-deploy.tar.gz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+package-lock.json
