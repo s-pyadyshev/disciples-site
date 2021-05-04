@@ -76,7 +76,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --color --fix",
-    "*.{css,scss}": "stylelint --color",
+    "*.{css,scss}": "stylelint --fix --color --allow-empty-input",
     "*.pug": "pug-lint"
   }
 }

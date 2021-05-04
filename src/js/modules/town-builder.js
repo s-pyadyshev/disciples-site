@@ -8,10 +8,7 @@ export const buildTown = (town, build) => {
     const buildBtns = document.querySelectorAll(build);
     let buildBtnArray = [];
 
-    for (let i = buildBtns.length; i--; buildBtnArray.unshift(buildBtns[i])) {
-      return buildBtnArray;
-    }
-
+    for (let i = buildBtns.length; i--; buildBtnArray.unshift(buildBtns[i]));
     return buildBtnArray;
   };
 

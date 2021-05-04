@@ -8,7 +8,7 @@ It is recreation of some screens and features from the game Disciples II: Rise o
 - Main screen (hover buttons)
 - Town building screens with buttons to toggle building images
 
-Technologies: JS, Pug, SCSS, Gulp, [FileSaver.js](https://github.com/eligrey/FileSaver.js), [dom-to-image](https://github.com/tsayen/dom-to-image), [lazysizes](https://github.com/aFarkas/lazysizes)
+Technologies: JS, Pug, SCSS, Gulp, [FileSaver.js](https://github.com/eligrey/FileSaver.js), [html-to-image](https://github.com/bubkoo/html-to-image), [lazysizes](https://github.com/aFarkas/lazysizes)
 
 # TODO
 
