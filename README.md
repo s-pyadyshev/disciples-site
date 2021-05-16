@@ -12,9 +12,9 @@ Technologies: JS, Pug, SCSS, Gulp, [FileSaver.js](https://github.com/eligrey/Fil
 
 # TODO
 
+- Add tests
 - Refactoring
 - Fix save image feature for Safari
 - Add more styling to buttons, links, sections, etc.
 - Fix bug when menu button image jumps on 1st hover
-- Fix flashing of image icon in top left corner caused by lazyloading
 - Add favicon

@@ -1,0 +1,16 @@
+.clans {
+  img {
+    &.clans__town,
+    &.clans__walls {
+      display: block;
+    }
+  }
+
+  &__brewery {
+    z-index: 1;
+  }
+
+  &__town {
+    z-index: 0;
+  }
+}

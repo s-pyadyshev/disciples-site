@@ -1,0 +1,52 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// COLORS
+
+$color-black: #000;
+$color-white: #fff;
+
+// FONTS
+
+// EASING TRANSITIONS
+$duration-normal: 0.4s;
+$easing-back-out:
+  cubic-bezier(
+    0.25,
+    0.74,
+    0.22,
+    1.1
+  ); // http://cubic-bezier.com/#.25,.74,.22,1.1
+$easing-back-in:
+  cubic-bezier(
+    0.47,
+    -0.1,
+    0.5,
+    -0.06
+  ); // http://cubic-bezier.com/#.47,-0.1,.5,-.06
+$easing-out: ease-out;
+$easing-in: ease-in;
+
+// Standard media queries
+$mobile: "only all and (max-width: 767px)";
+$tablet: "only all and (max-width: 1199px)";
+
+// Dimensions
+$global-font-size: 16px;
+$global-line-height: 1.5;
+
+// Buttons
+$btn-text-hover: #fff;
+
+$empire-color: #000073;
+$empire-text-color: #fff;
+$undead-color: #293010;
+$undead-text-color: #fff;
+$elves-color: #7b8948;
+$elves-text-color: #fff;
+$clans-color: #c6c7d6;
+$clans-text-color: #fff;
+$legions-color: #6b0c08;
+$legions-text-color: #fff;
+
+// Animations
+$global-transition-duration: 0.2s;

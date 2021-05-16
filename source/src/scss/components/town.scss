@@ -1,0 +1,28 @@
+.town {
+  position: relative;
+  display: inline-block;
+  width: 640px;
+  height: 600px;
+
+  img {
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 640px;
+    height: 600px;
+
+    &.is-active {
+      display: block;
+    }
+
+    @media #{$mobile} {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media #{$mobile} {
+    width: 100%;
+    height: 500px;
+  }
+}

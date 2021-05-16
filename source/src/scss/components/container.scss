@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1160px;
+
+  @media (max-width: 1220px) {
+    flex-wrap: wrap;
+    min-width: auto;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+}

@@ -1,0 +1,12 @@
+.empire {
+  img {
+    &.empire__town,
+    &.empire__walls {
+      display: block;
+    }
+  }
+
+  &__town {
+    z-index: 0;
+  }
+}

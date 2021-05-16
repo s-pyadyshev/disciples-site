@@ -1,0 +1,24 @@
+.undead {
+  img {
+    &.undead__town,
+    &.undead__walls {
+      display: block;
+    }
+  }
+
+  &__dragon-cemetery {
+    z-index: 2;
+  }
+
+  &__evil-monastery {
+    z-index: 1;
+  }
+
+  &__graveyard {
+    z-index: 1;
+  }
+
+  &__town {
+    z-index: 0;
+  }
+}

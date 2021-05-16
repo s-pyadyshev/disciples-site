@@ -1,0 +1,11 @@
+.legions {
+  img {
+    &.legions__town {
+      display: block;
+    }
+  }
+
+  &__town {
+    z-index: 0;
+  }
+}

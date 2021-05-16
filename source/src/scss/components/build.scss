@@ -1,0 +1,107 @@
+.build-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 550px;
+
+  @media #{$tablet} {
+    margin-bottom: 30px;
+  }
+
+  @media #{$mobile} {
+    font-size: 15px;
+  }
+}
+
+.build {
+  display: table;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition-duration: $global-transition-duration;
+  cursor: pointer;
+
+  span {
+    border: 1px solid #000;
+    padding: 2px 5px;
+    transition-duration: $global-transition-duration;
+    user-select: none;
+  }
+
+  &__or {
+    margin-right: 5px;
+    font-weight: 700;
+  }
+
+  &__section {
+    margin-bottom: 5px;
+  }
+
+  &__section-title {
+    display: block;
+    font-weight: 700;
+  }
+
+  &:hover span {
+    transition-duration: $global-transition-duration;
+  }
+
+  &--empire {
+    &:hover span {
+      color: $btn-text-hover;
+      background-color: $empire-color;
+    }
+  }
+
+  &--undead {
+    &:hover span {
+      color: $btn-text-hover;
+      background-color: $undead-color;
+    }
+  }
+
+  &--elves {
+    &:hover span {
+      color: $btn-text-hover;
+      background-color: $elves-color;
+    }
+  }
+
+  &--clans {
+    &:hover span {
+      color: $btn-text-hover;
+      background-color: $clans-color;
+    }
+  }
+
+  &--legions {
+    &:hover span {
+      color: $btn-text-hover;
+      background-color: $legions-color;
+    }
+  }
+
+  &--clans.is-active span {
+    color: $clans-text-color;
+    background-color: $clans-color;
+  }
+
+  &--empire.is-active span {
+    color: $empire-text-color;
+    background-color: $empire-color;
+  }
+
+  &--undead.is-active span {
+    color: $undead-text-color;
+    background-color: $undead-color;
+  }
+
+  &--legions.is-active span {
+    color: $legions-text-color;
+    background-color: $legions-color;
+  }
+
+  &--elves.is-active span {
+    color: $elves-text-color;
+    background-color: $elves-color;
+  }
+}
