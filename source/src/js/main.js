@@ -6,6 +6,8 @@ import tabs from "./modules/tabs";
 import toggleByDataAttr from "./modules/toggleByDataAttr";
 import saveImage from "./modules/image-saver";
 
+const townNode = document.querySelector(".town");
+const savePictureButton = document.querySelector(".btn--save");
 const townData = [
   {
     town: ".empire",
@@ -34,7 +36,10 @@ window.addEventListener(
   () => {
     tabs();
     toggleByDataAttr();
-    townData.forEach((item) => saveImage(item.town, item.saveImage));
+
+    if (townNode && savePictureButton) {
+      townData.forEach((item) => saveImage(item.town, item.saveImage));
+    }
   },
   false,
 );

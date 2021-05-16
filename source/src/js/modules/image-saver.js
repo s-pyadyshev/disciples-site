@@ -4,10 +4,6 @@ export const saveImage = (selector, buttonClass) => {
   const node = document.querySelector(selector);
   const button = document.querySelector(buttonClass);
 
-  if (!node && !button) {
-    return;
-  }
-
   button.addEventListener("click", () => {
     htmlToImage.toJpeg(node, { quality: 0.95 }).then((dataUrl) => {
       const link = document.createElement("a");
