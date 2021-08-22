@@ -23,6 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Build
+      working-directory: ./source
       run: |
         npm install
         gulp build
