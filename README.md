@@ -1,5 +1,7 @@
 # disciples-site
 
+[![CI](https://github.com/s-pyadyshev/disciples-site/actions/workflows/gulp.yml/badge.svg)](https://github.com/s-pyadyshev/disciples-site/actions/workflows/gulp.yml)
+
 [GitHub Page](https://s-pyadyshev.github.io/disciples-site)
 <img width=100% src="https://raw.githubusercontent.com/s-pyadyshev/disciples-site/master/screen2.jpg">
 
