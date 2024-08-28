@@ -55,7 +55,7 @@
     "stylelint-order": "4.1.0",
     "stylelint-scss": "3.18.0",
     "vinyl-buffer": "1.0.1",
-    "webpack": "4.43.0",
+    "webpack": "5.94.0",
     "webpack-stream": "5.2.1",
     "yargs": "15.3.1"
   },
